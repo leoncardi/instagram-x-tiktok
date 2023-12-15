@@ -14,7 +14,6 @@ class PageHandler:
         try:
             self.page = await self.context.new_page()
             l.info(f'({self.page_id}) Page created')
-
         except Exception as e:
             l.error(f'(new_page method) {e}')
             raise e
@@ -22,7 +21,10 @@ class PageHandler:
     async def goto(self, url):
         try:
             await self.page.goto(url)
-            l.info(f'({self.page_id}) Reached {url}')
+            if self.page.url == url:
+                l.info(f'({self.page_id}) Reached {self.page.url}')
+            else:
+                l.warning(f'({self.page_id}) Reached {self.page.url}')
         except Exception as e:
             l.error(f'(goto method) {e}')
             raise e
