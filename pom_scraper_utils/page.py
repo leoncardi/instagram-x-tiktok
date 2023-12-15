@@ -15,7 +15,7 @@ class PageHandler:
             self.page = await self.context.new_page()
             l.info(f'({self.page_id}) Page created')
         except Exception as e:
-            l.error(f'(new_page method) {e}')
+            l.error(f'(PageHandler.new_page) {e}')
             raise e
     
     async def goto(self, url):
@@ -26,7 +26,7 @@ class PageHandler:
             else:
                 l.warning(f'({self.page_id}) Reached {self.page.url}')
         except Exception as e:
-            l.error(f'(goto method) {e}')
+            l.error(f'(PageHandler.goto) {e}')
             raise e
         
     async def close(self):
@@ -34,5 +34,5 @@ class PageHandler:
             await self.page.close()
             l.info(f'({self.page_id}) Page disposed')
         except Exception as e:
-            l.error(f'(close method) {e}')
+            l.error(f'(PageHandler.close) {e}')
             raise e

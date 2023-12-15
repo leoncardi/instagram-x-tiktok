@@ -10,5 +10,5 @@ class BrowserHandler:
             l.info('Context created')
             return browser, context
         except Exception as e:
-            l.error(f'(launch method) {e}')
+            l.error(f'(BrowserHandler.launch) {e}')
             raise e

@@ -17,7 +17,7 @@ async def main():
             await gram_ph.new_page()     
             await gram_ph.goto('https://www.businessofapps.com/data/instagram-statistics/')
         except Exception as e:
-            l.error(f'(main) {e}')
+            l.error(f'(impl_scraper.main) {e}')
             raise e
         
 asyncio.run(main())
