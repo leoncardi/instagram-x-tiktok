@@ -31,8 +31,11 @@ class PageHandler:
         
     async def close(self):
         try:
-            await self.page.close()
-            l.info(f'({self.page_id}) Page disposed')
+            if self.page:
+                self.page = await self.page.close()
+                l.info(f'({self.page_id}) Page disposed')
+            else:
+                l.warning(f"({self.page_id}) Attempted (PageHandler.close), but there is no PageObject available for disposal")
         except Exception as e:
             l.error(f'(PageHandler.close) {e}')
             raise e
