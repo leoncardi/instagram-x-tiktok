@@ -1,5 +1,16 @@
 from entrymaven import l
 
+class ScrapeHandlerUtils:
+    @staticmethod
+    async def multiple_target_screenshot(page, target, title):
+        try:
+            await target.scroll_into_view_if_needed()
+            await page.wait_for_timeout(2000)     
+            await target.screenshot(path=f'database/raw_targets_screenshots/{title}.jpg')
+            l.info(f'(Page: {page.page_id}) Moved to chart and screenshot of the target {title} captured successfully')
+        except Exception as e:
+            l.error(f'(Page: {page.page_id}) {e}')
+
 class TableScrapeHandler:
         def __init__(self, page_handler: 'PageHandlerObject'):
             self.page = page_handler.page
@@ -16,7 +27,7 @@ class TableScrapeHandler:
             except Exception as e:
                 l.error(f'(Page: {self.page_id}) {e}')
 
-        async def multiple_target_finder(self, table_selector: str, screenshot: bool) -> list:
+        async def multiple_table_finder(self, table_selector: str, screenshot: bool) -> list:
             founded_targets = await self.page.query_selector_all(f"div [id^='{table_selector}'] table")
             if founded_targets:
                 for i, target in enumerate(founded_targets, start=1):
@@ -29,7 +40,11 @@ class TableScrapeHandler:
                         screenshot_file_name = f'database/table_{i}'
                     
                     if screenshot:
-                        await self.multiple_target_screenshot(target, screenshot_file_name)     
+                        await ScrapeHandlerUtils.multiple_target_screenshot(
+                            page = self.page,
+                            target = target, 
+                            title = screenshot_file_name
+                        )     
             else:
                 l.error(f'(Page: {self.page_id}) No targets found with the selector {table_selector}')
                 return None
@@ -61,14 +76,8 @@ class ChartScrapeHandler:
             self.SELECTOR_IFRAME = 'iframe[title="{iframe_title_goes_here}"]'
             self.raw_data = []
 
-        async def multiple_target_screenshot(self, target, title):
-            await target.scroll_into_view_if_needed()
-            await self.page.wait_for_timeout(2000)     
-            await target.screenshot(path=f'database/raw_targets_screenshots/{title}.jpg')
-            l.info(f'(Page: {self.page_id}) Moved to chart and screenshot of the target {title} captured successfully')
-
-        async def multiple_target_finder(self, target_classname: str, screenshot: bool) -> list:
-            founded_targets = await self.page.query_selector_all(f'.{target_classname}') 
+        async def multiple_target_finder(self, chart_selector: str, screenshot: bool) -> list:
+            founded_targets = await self.page.query_selector_all(f'.{chart_selector}') 
             for target in founded_targets:
                 selector = self.SELECTOR_IFRAME 
                 title = await target.get_attribute('data-title')                 
@@ -79,8 +88,11 @@ class ChartScrapeHandler:
                     await target.scroll_into_view_if_needed()
                     await self.page.wait_for_timeout(2000)  
                 else:
-                    await self.multiple_target_screenshot(target, title)
-                    
+                    await ScrapeHandlerUtils.multiple_target_screenshot(
+                        page = self.page,
+                        target = target, 
+                        title = title
+                    )         
             return self.founded_iframes_selectors
 
         async def multiple_barchart_scraper(self, iframes: list) -> list:
