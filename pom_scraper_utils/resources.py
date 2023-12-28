@@ -2,14 +2,20 @@ from entrymaven import l
 
 class ScrapeHandlerUtils:
     @staticmethod
-    async def multiple_target_screenshot(page, target, title):
+    async def multi_target_screenshot(page: 'PageObject', page_id: 'PageObject.page_id',
+            target: str, title: str, load: bool = True):
         try:
             await target.scroll_into_view_if_needed()
-            await page.wait_for_timeout(2000)     
-            await target.screenshot(path=f'database/raw_targets_screenshots/{title}.jpg')
-            l.info(f'(Page: {page.page_id}) Moved to chart and screenshot of the target {title} captured successfully')
+            
+            if load:
+                for i in range(1, 3):
+                    await page.wait_for_timeout(1000)
+                    l.info(f'(Scraper: {page_id}) Waiting for {title} ({i}/2 seconds)')
+            
+            await target.screenshot(path=f'database/raw_data_screenshots/{title}.jpg')
+            l.info(f'(Scraper: {page_id}) Attempt to take a screenshot of the {title} element')
         except Exception as e:
-            l.error(f'(Page: {page.page_id}) {e}')
+            l.error(f'(Scraper: {page_id}) {e}')
 
 class TableScrapeHandler:
         def __init__(self, page_handler: 'PageHandlerObject'):
