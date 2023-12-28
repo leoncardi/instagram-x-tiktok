@@ -18,61 +18,67 @@ class ScrapeHandlerUtils:
             l.error(f'(Scraper: {page_id}) {e}')
 
 class TableScrapeHandler:
-        def __init__(self, page_handler: 'PageHandlerObject'):
-            self.page = page_handler.page
-            self.page_id = page_handler.page_id
-            self.TABLE_SELECTOR = 'placeholder'
-            self.raw_data = []
+    def __init__(self, page_handler: 'PageHandlerObject'):
+        self.page_handler = page_handler
+        self.page = page_handler.page
+        self.page_id = page_handler.page_id
+        self.table_selector: str = None
+        self.founded_tables = []
+        self.raw_tables_data = []
 
-        async def multiple_target_screenshot(self, target, title):
+    async def multi_table_finder(self, table_selector: str, screenshot: bool = True) -> list:
+        founded_tables = await self.page.query_selector_all(f"div [id^='{table_selector}'] table")   
+        for target in founded_tables:
             try:
-                await target.scroll_into_view_if_needed()
-                await target.wait_for_timeout(2000)
-                await target.screenshot(path=f'database/raw_targets_screenshots/{title}.jpg')
-                l.info(f'(Page: {self.page_id}) Moved to table and screenshot of the target {title} captured successfully')
+                aria_label = await target.get_attribute('aria-label')
+                l.info(f'(Scraper: {self.page_id}) Table founded by aria-label: {aria_label}') 
+
+                if screenshot:
+                    screenshot_file_name = f"{aria_label.replace(' ', '_')}"
+                    await ScrapeHandlerUtils.multi_target_screenshot(page=self.page, page_id=self.page_id,
+                        target=target, title=screenshot_file_name)
+                    
             except Exception as e:
-                l.error(f'(Page: {self.page_id}) {e}')
+                l.error(f'(Scraper: {self.page_id} | TableScrapeHandler.multi_table_finder) {e}')
+                l.warning(f'(Scraper: {self.page_id} | TableScrapeHandler.multi_table_finder) Table finder may not have been completed successfully. Returning founded tables so far')
+                return founded_tables
+        return founded_tables
 
-        async def multiple_table_finder(self, table_selector: str, screenshot: bool) -> list:
-            founded_targets = await self.page.query_selector_all(f"div [id^='{table_selector}'] table")
-            if founded_targets:
-                for i, target in enumerate(founded_targets, start=1):
-                    aria_label = await target.get_attribute('aria-label')
-                    l.info(f'{aria_label} (index: {i}): Aria-label found')
-                    
-                    if aria_label:
-                        screenshot_file_name = f"database/{aria_label.replace(' ', '_')}"
-                    else:
-                        screenshot_file_name = f'database/table_{i}'
-                    
-                    if screenshot:
-                        await ScrapeHandlerUtils.multiple_target_screenshot(
-                            page = self.page,
-                            target = target, 
-                            title = screenshot_file_name
-                        )     
-            else:
-                l.error(f'(Page: {self.page_id}) No targets found with the selector {table_selector}')
-                return None
-            return founded_targets
-
-        async def multiple_table_scraper(self, tables: list) -> list:
-            for table in tables:
-                headers = await table.query_selector_all('.footable-header')
+    async def multi_table_scraper(self, tables: list) -> list:
+        for table in tables:
+            try:
+                single_table_raw_data = []
                 datapoints = await table.query_selector_all('tr')
-
-                for header in headers:
-                    content = await header.inner_text()
-                    self.raw_data.append(f'Header: {content}')
+                num_columns = 0
                 
                 for datapoint in datapoints:
-                    data_variables = await datapoint.query_selector_all('td')
-                    for data_variable in data_variables:
-                        content = await data_variable.inner_text()
-                        self.raw_data.append(f'{content}')
-            print(self.raw_data)
-            return self.raw_data
-      
+                    columns = await datapoint.query_selector_all('td')
+                    if len(columns) > num_columns:
+                        num_columns = len(columns)
+                
+                for datapoint in datapoints:
+                    row_content = ""
+                    columns = await datapoint.query_selector_all('td')
+                    
+                    for col in range(num_columns):
+                        if col < len(columns):
+                            col_content = await columns[col].inner_text()
+                            row_content += col_content + "|_|"
+                        else:
+                            row_content += "|_|"             
+                    row_content = row_content[:-3]
+                    single_table_raw_data.append(row_content)
+                    
+                    if "|_|" in row_content:
+                        l.info(f"(Scraper: {self.page_id}) Table raw data point extracted: {row_content}")
+                    else:
+                        l.warning(f"(Scraper: {self.page_id}) Chart raw data point may not extracted correctly: {row_content}")
+                
+                self.raw_tables_data.append(single_table_raw_data)
+            except Exception as e:
+                l.error(f'(Scraper: {self.page_id}) {e}')
+                l.warning(f'(Scraper: {self.page_id}) Table webscraping may not have been completed successfully')
+        return self.raw_tables_data
 class ChartScrapeHandler:
         def __init__(self, page_handler: 'PageHandlerObject'):
             self.page_handler = page_handler
