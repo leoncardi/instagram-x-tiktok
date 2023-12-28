@@ -79,54 +79,63 @@ class TableScrapeHandler:
                 l.error(f'(Scraper: {self.page_id}) {e}')
                 l.warning(f'(Scraper: {self.page_id}) Table webscraping may not have been completed successfully')
         return self.raw_tables_data
+
 class ChartScrapeHandler:
-        def __init__(self, page_handler: 'PageHandlerObject'):
-            self.page_handler = page_handler
-            self.page = page_handler.page
-            self.page_id = page_handler.page_id
-            self.founded_iframes_selectors = []
-            self.SELECTOR_IFRAME = 'iframe[title="{iframe_title_goes_here}"]'
-            self.raw_data = []
+    def __init__(self, page_handler: 'PageHandlerObject'):
+        self.page_handler = page_handler
+        self.page = page_handler.page
+        self.page_id = page_handler.page_id
+        self.iframe_selector = 'iframe[title="{chart_iframe_title_goes_here}"]'
+        self.founded_iframes_selectors = []
+        self.raw_chart_data = []
 
-        async def multiple_target_finder(self, chart_selector: str, screenshot: bool) -> list:
-            founded_targets = await self.page.query_selector_all(f'.{chart_selector}') 
-            for target in founded_targets:
-                selector = self.SELECTOR_IFRAME 
-                title = await target.get_attribute('data-title')                 
-                iframe_selector = selector.format(iframe_title_goes_here=title)
-                self.founded_iframes_selectors.append(iframe_selector)          
-                
-                if screenshot == False:
-                    await target.scroll_into_view_if_needed()
-                    await self.page.wait_for_timeout(2000)  
-                else:
-                    await ScrapeHandlerUtils.multiple_target_screenshot(
-                        page = self.page,
-                        target = target, 
-                        title = title
-                    )         
-            return self.founded_iframes_selectors
+    async def multi_chart_finder(self, chart_selector: str, screenshot: bool = True) -> list:
+        founded_charts = await self.page.query_selector_all(f'.{chart_selector}') 
+        for target in founded_charts:
+            selector = self.iframe_selector 
+            title = await target.get_attribute('data-title')                 
+            iframe_selector = selector.format(chart_iframe_title_goes_here=title)
+            self.founded_iframes_selectors.append(iframe_selector)          
+            
+            if screenshot:
+                await ScrapeHandlerUtils.multi_target_screenshot(page=self.page, page_id=self.page_id,
+                target=target, title=title)
+            else:
+                await target.scroll_into_view_if_needed()
+                await self.page.wait_for_timeout(2000) 
+        return self.founded_iframes_selectors
 
-        async def multiple_barchart_scraper(self, iframes: list) -> list:
-            for iframe in iframes:
-                iframe_title = f'iframe: {await self.page.frame_locator(iframe).locator("title").inner_text()}'
-                self.raw_data.append(iframe_title) 
+    async def multi_chart_scraper(self, charts: list) -> list:
+        """
+        charts: list within iframes target selectors
+        """
+        for chart in charts:
+            try:
+                single_raw_chart_data = [] 
+                chart_iframe_title = f'{await self.page.frame_locator(chart).locator("title").inner_text()}'
+                single_raw_chart_data.append(chart_iframe_title)
                 
-                counter = await self.page.frame_locator(iframe).locator('.igc-graph .igc-column').all()
+                counter = await self.page.frame_locator(chart).locator('.igc-graph .igc-column').all()
                 qtd = len(counter) + 1
                 
-                l.info(f'(Page: {self.page_id}) barchart ({iframe_title}) webscraping started')   
+                l.info(f'(Scraper: {self.page_id}) Barchart ({chart_iframe_title}) webscraping started')   
                 for i in range(1, qtd):
-                    await self.page.frame_locator(iframe).locator(f'path:nth-child({i})').hover()
-                    await self.page.wait_for_timeout(500)
+                    await self.page.frame_locator(chart).locator(f'path:nth-child({i})').hover()
 
-                    time_series_category = await self.page.frame_locator(iframe).locator('.tt_text').inner_text()
-                    time_series_value = await self.page.frame_locator(iframe).locator('.tt_value').inner_text()
+                    target_time_series_category = await self.page.frame_locator(chart).locator('.tt_text').inner_text()
+                    target_time_series_value = await self.page.frame_locator(chart).locator('.tt_value').inner_text()
                     
-                    collected_data_point = f'{time_series_category}: {time_series_value}'
-                    l.info(f'(Page: {self.page_id}) time series raw data point extracted: {time_series_category} - {time_series_value}')
-                
-                    self.raw_data.append(collected_data_point)
-                l.info(f'(Page: {self.page_id}) barchart ({iframe_title}) webscraping done successfully')
-            l.info(f'(Page: {self.page_id}) All barchart webscraping ended')
-            return self.raw_data
+                    datapoint_content = f'{target_time_series_category}|_|{target_time_series_value}'
+                    single_raw_chart_data.append(datapoint_content)
+                    
+                    if not target_time_series_category or not target_time_series_value:
+                        l.warning(f"(Scraper: {self.page_id}) Chart raw data point not extracted correctly: {datapoint_content}")
+                    else:
+                        l.info(f"(Scraper: {self.page_id}) Chart raw data point extracted: {datapoint_content}")                
+                self.raw_chart_data.append(single_raw_chart_data)
+                l.info(f'(Scraper: {self.page_id}) Barchart ({chart_iframe_title}) webscraping ended')
+            except Exception as e:
+                l.error(f'(Scraper: {self.page_id}) {e}')
+                l.warning(f'(Scraper: {self.page_id}) Barchart webscraping may not have been completed successfully')
+        l.info(f'(Scraper: {self.page_id}) All barchart webscraping ended')    
+        return self.raw_chart_data
