@@ -10,7 +10,7 @@ This is an end-to-end (under development) data science project to compare Instag
     C[analysis]
     D[mining]
     E[modeling]
-    F[depl]
+    F[deploy]
 
     A --> B --> C <--> D <--> E --> F
 ```
@@ -55,8 +55,8 @@ all charts **(high priority)** <br>
 
 | **Priority** | **Feature/Requirement** | **Status** |
 | :---: | :--- | :--- |
-|High priority |Only use the Playwright package to perform all scraping and SQLite for storage. | Pending |
+|High priority |Only use the Playwright package to perform all scraping and SQLite for storage. | Finished |
 |Lowest priority |Create a user-friendly parameter file for editing this type of scraping, with selectors and details that make each extraction unique. This will make scraping easier to manage, especially for reuse. | Pending |
-|High priority |Carry out agile data scraping, prioritizing speed and efficiency with an approach focused on securing raw data quickly, but not disorganized, also aiming to facilitate subsequent transformation. | Pending |
-|High priority |Develop asynchronous scraping to speed up execution time, acting simultaneously on both pages. | Pending |
-|High priority |Code the entire scraping implementation in a single module, using clean code techniques and SOLID principles. Modularize the lower levels of extraction logic into utility modules. | Pending |
+|High priority |Carry out agile data scraping, prioritizing speed and efficiency with an approach focused on securing raw data quickly, but not disorganized, also aiming to facilitate subsequent transformation. | Finished |
+|High priority |Develop asynchronous scraping to speed up execution time, acting simultaneously on both pages. | Finished |
+|High priority |Code the entire scraping implementation in a single module, using clean code techniques and SOLID principles. Modularize the lower levels of extraction logic into utility modules. | Finished |
