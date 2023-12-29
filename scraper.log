@@ -1,0 +1,681 @@
+2023-12-28 22:10:39,705 - INFO: [NEW SCRAPING SESSION STARTED]
+2023-12-28 22:11:05,406 - INFO: (Scraper) Browser launched
+2023-12-28 22:11:05,610 - INFO: (Scraper) Context created
+2023-12-28 22:11:07,282 - INFO: (Scraper: TikTok) Page TikTok created in the context
+2023-12-28 22:11:07,460 - INFO: (Scraper: Instagram) Page Instagram created in the context
+2023-12-28 22:11:22,165 - INFO: (Scraper: TikTok) Reached https://www.businessofapps.com/data/tik-tok-statistics/
+2023-12-28 22:11:22,186 - INFO: (Scraper: TikTok) Waiting for any popup to appear in order to close it
+2023-12-28 22:11:27,341 - INFO: (Scraper: Instagram) Reached https://www.businessofapps.com/data/instagram-statistics/
+2023-12-28 22:11:27,357 - INFO: (Scraper: Instagram) Waiting for any popup to appear in order to close it
+2023-12-28 22:11:27,748 - INFO: (Scraper: TikTok) A popup was raised and subsequently closed by automation
+2023-12-28 22:11:27,967 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok overview
+2023-12-28 22:11:29,089 - INFO: (Scraper: TikTok) Waiting for TikTok_overview (1/2 seconds)
+2023-12-28 22:11:30,104 - INFO: (Scraper: TikTok) Waiting for TikTok_overview (2/2 seconds)
+2023-12-28 22:11:30,474 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_overview element
+2023-12-28 22:11:30,616 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok annual revenue
+2023-12-28 22:11:31,680 - INFO: (Scraper: TikTok) Waiting for TikTok_annual_revenue (1/2 seconds)
+2023-12-28 22:11:32,702 - INFO: (Scraper: TikTok) Waiting for TikTok_annual_revenue (2/2 seconds)
+2023-12-28 22:11:33,360 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_annual_revenue element
+2023-12-28 22:11:33,547 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok annual users
+2023-12-28 22:11:34,699 - INFO: (Scraper: TikTok) Waiting for TikTok_annual_users (1/2 seconds)
+2023-12-28 22:11:35,739 - INFO: (Scraper: TikTok) Waiting for TikTok_annual_users (2/2 seconds)
+2023-12-28 22:11:36,072 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_annual_users element
+2023-12-28 22:11:36,275 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok users by region
+2023-12-28 22:11:37,311 - INFO: (Scraper: TikTok) Waiting for TikTok_users_by_region (1/2 seconds)
+2023-12-28 22:11:38,350 - INFO: (Scraper: TikTok) Waiting for TikTok_users_by_region (2/2 seconds)
+2023-12-28 22:11:38,690 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_users_by_region element
+2023-12-28 22:11:38,919 - INFO: (Scraper: TikTok) Table founded by aria-label: Douyin users
+2023-12-28 22:11:39,964 - INFO: (Scraper: TikTok) Waiting for Douyin_users (1/2 seconds)
+2023-12-28 22:11:40,996 - INFO: (Scraper: TikTok) Waiting for Douyin_users (2/2 seconds)
+2023-12-28 22:11:41,412 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the Douyin_users element
+2023-12-28 22:11:41,584 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok cumulative downloads
+2023-12-28 22:11:42,876 - INFO: (Scraper: TikTok) Waiting for TikTok_cumulative_downloads (1/2 seconds)
+2023-12-28 22:11:43,894 - INFO: (Scraper: TikTok) Waiting for TikTok_cumulative_downloads (2/2 seconds)
+2023-12-28 22:11:44,256 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_cumulative_downloads element
+2023-12-28 22:11:44,431 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok age demographics
+2023-12-28 22:11:45,477 - INFO: (Scraper: TikTok) Waiting for TikTok_age_demographics (1/2 seconds)
+2023-12-28 22:11:46,494 - INFO: (Scraper: TikTok) Waiting for TikTok_age_demographics (2/2 seconds)
+2023-12-28 22:11:46,994 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_age_demographics element
+2023-12-28 22:11:47,247 - INFO: (Scraper: TikTok) Table founded by aria-label: TikTok gender demographics
+2023-12-28 22:11:48,334 - INFO: (Scraper: TikTok) Waiting for TikTok_gender_demographics (1/2 seconds)
+2023-12-28 22:11:49,364 - INFO: (Scraper: TikTok) Waiting for TikTok_gender_demographics (2/2 seconds)
+2023-12-28 22:11:50,264 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok_gender_demographics element
+2023-12-28 22:11:51,478 - INFO: (Scraper: TikTok) Waiting for TikTok estimated revenues (1/2 seconds)
+2023-12-28 22:11:52,541 - INFO: (Scraper: TikTok) Waiting for TikTok estimated revenues (2/2 seconds)
+2023-12-28 22:11:53,294 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok estimated revenues element
+2023-12-28 22:11:54,408 - INFO: (Scraper: TikTok) Waiting for TikTok MAUs (1/2 seconds)
+2023-12-28 22:11:55,426 - INFO: (Scraper: TikTok) Waiting for TikTok MAUs (2/2 seconds)
+2023-12-28 22:11:56,074 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok MAUs element
+2023-12-28 22:11:57,242 - INFO: (Scraper: TikTok) Waiting for TikTok Quarterly Downloads (1/2 seconds)
+2023-12-28 22:11:58,360 - INFO: (Scraper: TikTok) Waiting for TikTok Quarterly Downloads (2/2 seconds)
+2023-12-28 22:11:59,130 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the TikTok Quarterly Downloads element
+2023-12-28 22:11:59,413 - INFO: (Scraper: Instagram) No identifiable popup type was raised
+2023-12-28 22:11:59,574 - INFO: (Scraper: Instagram) Table founded by aria-label: Instagram overview
+2023-12-28 22:12:00,594 - INFO: (Scraper: TikTok) Waiting for Social App Users (1/2 seconds)
+2023-12-28 22:12:00,656 - INFO: (Scraper: Instagram) Waiting for Instagram_overview (1/2 seconds)
+2023-12-28 22:12:01,683 - INFO: (Scraper: TikTok) Waiting for Social App Users (2/2 seconds)
+2023-12-28 22:12:01,689 - INFO: (Scraper: Instagram) Waiting for Instagram_overview (2/2 seconds)
+2023-12-28 22:12:02,560 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram_overview element
+2023-12-28 22:12:02,643 - INFO: (Scraper: TikTok) Attempt to take a screenshot of the Social App Users element
+2023-12-28 22:12:02,797 - INFO: (Scraper: Instagram) Table founded by aria-label: Instagram annual revenue
+2023-12-28 22:12:03,867 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:03,984 - INFO: (Scraper: Instagram) Waiting for Instagram_annual_revenue (1/2 seconds)
+2023-12-28 22:12:04,149 - INFO: (Scraper: TikTok) Table raw data point extracted: Launch date|_|September 2016 (China); September 2017 (International)
+2023-12-28 22:12:04,391 - INFO: (Scraper: TikTok) Table raw data point extracted: HQ|_|Beijing, China
+2023-12-28 22:12:04,641 - INFO: (Scraper: TikTok) Table raw data point extracted: People|_|Liang Rubo (ByteDance CEO), Shouzi Chew (TikTok CEO), Vanessa Pappas (TikTok COO)
+2023-12-28 22:12:04,776 - INFO: (Scraper: TikTok) Table raw data point extracted: Business type|_|Private, subsidiary
+2023-12-28 22:12:04,893 - INFO: (Scraper: TikTok) Table raw data point extracted: Owner|_|ByteDance
+2023-12-28 22:12:04,996 - INFO: (Scraper: Instagram) Waiting for Instagram_annual_revenue (2/2 seconds)
+2023-12-28 22:12:05,066 - INFO: (Scraper: TikTok) Table raw data point extracted: Industry|_|Social networking
+2023-12-28 22:12:05,495 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram_annual_revenue element
+2023-12-28 22:12:05,546 - INFO: (Scraper: Instagram) Table founded by aria-label: Percentage Facebook revenue from Instagram
+2023-12-28 22:12:05,941 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:06,211 - INFO: (Scraper: TikTok) Table raw data point extracted: 2017|_|63
+2023-12-28 22:12:06,365 - INFO: (Scraper: TikTok) Table raw data point extracted: 2018|_|150
+2023-12-28 22:12:06,594 - INFO: (Scraper: TikTok) Table raw data point extracted: 2019|_|350
+2023-12-28 22:12:06,691 - INFO: (Scraper: Instagram) Waiting for Percentage_Facebook_revenue_from_Instagram (1/2 seconds)
+2023-12-28 22:12:07,053 - INFO: (Scraper: TikTok) Table raw data point extracted: 2020|_|2640
+2023-12-28 22:12:07,277 - INFO: (Scraper: TikTok) Table raw data point extracted: 2021|_|4697
+2023-12-28 22:12:07,384 - INFO: (Scraper: TikTok) Table raw data point extracted: 2022|_|9401
+2023-12-28 22:12:07,702 - INFO: (Scraper: Instagram) Waiting for Percentage_Facebook_revenue_from_Instagram (2/2 seconds)
+2023-12-28 22:12:08,057 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:08,205 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Percentage_Facebook_revenue_from_Instagram element
+2023-12-28 22:12:08,301 - INFO: (Scraper: TikTok) Table raw data point extracted: 2018|_|133
+2023-12-28 22:12:08,429 - INFO: (Scraper: Instagram) Table founded by aria-label: Instagram annual users
+2023-12-28 22:12:08,637 - INFO: (Scraper: TikTok) Table raw data point extracted: 2019|_|381
+2023-12-28 22:12:09,277 - INFO: (Scraper: TikTok) Table raw data point extracted: 2020|_|700
+2023-12-28 22:12:09,362 - INFO: (Scraper: TikTok) Table raw data point extracted: 2021|_|902
+2023-12-28 22:12:09,448 - INFO: (Scraper: TikTok) Table raw data point extracted: 2022|_|1366
+2023-12-28 22:12:09,518 - INFO: (Scraper: TikTok) Table raw data point extracted: 2023|_|1587
+2023-12-28 22:12:09,587 - INFO: (Scraper: Instagram) Waiting for Instagram_annual_users (1/2 seconds)
+2023-12-28 22:12:09,899 - INFO: (Scraper: TikTok) Table raw data point extracted: |_||_||_||_||_|
+2023-12-28 22:12:10,070 - INFO: (Scraper: TikTok) Table raw data point extracted: 2018|_|88|_|12|_|8|_|5|_|6
+2023-12-28 22:12:10,221 - INFO: (Scraper: TikTok) Table raw data point extracted: 2019|_|185|_|49|_|59|_|33|_|28
+2023-12-28 22:12:10,366 - INFO: (Scraper: TikTok) Table raw data point extracted: 2020|_|300|_|82|_|104|_|61|_|55
+2023-12-28 22:12:10,531 - INFO: (Scraper: TikTok) Table raw data point extracted: 2021|_|404|_|110|_|138|_|97|_|82
+2023-12-28 22:12:10,598 - INFO: (Scraper: Instagram) Waiting for Instagram_annual_users (2/2 seconds)
+2023-12-28 22:12:10,741 - INFO: (Scraper: TikTok) Table raw data point extracted: 2022|_|590|_|169|_|199|_|168|_|129
+2023-12-28 22:12:10,921 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram_annual_users element
+2023-12-28 22:12:10,957 - INFO: (Scraper: TikTok) Table raw data point extracted: 2023|_|682|_|192|_|238|_|207|_|171
+2023-12-28 22:12:11,176 - INFO: (Scraper: Instagram) Table founded by aria-label: Instagram users by region
+2023-12-28 22:12:11,391 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:11,471 - INFO: (Scraper: TikTok) Table raw data point extracted: 2017|_|33
+2023-12-28 22:12:11,541 - INFO: (Scraper: TikTok) Table raw data point extracted: 2018|_|150
+2023-12-28 22:12:11,624 - INFO: (Scraper: TikTok) Table raw data point extracted: 2019|_|400
+2023-12-28 22:12:11,687 - INFO: (Scraper: TikTok) Table raw data point extracted: 2020|_|600
+2023-12-28 22:12:11,775 - INFO: (Scraper: TikTok) Table raw data point extracted: 2021|_|710
+2023-12-28 22:12:11,851 - INFO: (Scraper: TikTok) Table raw data point extracted: 2022|_|780
+2023-12-28 22:12:12,095 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:12,161 - INFO: (Scraper: TikTok) Table raw data point extracted: 2017|_|68
+2023-12-28 22:12:12,242 - INFO: (Scraper: TikTok) Table raw data point extracted: 2018|_|200
+2023-12-28 22:12:12,261 - INFO: (Scraper: Instagram) Waiting for Instagram_users_by_region (1/2 seconds)
+2023-12-28 22:12:12,304 - INFO: (Scraper: TikTok) Table raw data point extracted: 2019|_|857
+2023-12-28 22:12:12,378 - INFO: (Scraper: TikTok) Table raw data point extracted: 2020|_|1579
+2023-12-28 22:12:12,460 - INFO: (Scraper: TikTok) Table raw data point extracted: 2021|_|2560
+2023-12-28 22:12:12,576 - INFO: (Scraper: TikTok) Table raw data point extracted: 2022|_|3301
+2023-12-28 22:12:12,865 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:13,081 - INFO: (Scraper: TikTok) Table raw data point extracted: 13-17|_|14.4
+2023-12-28 22:12:13,133 - INFO: (Scraper: TikTok) Table raw data point extracted: 18-24|_|34.9
+2023-12-28 22:12:13,224 - INFO: (Scraper: TikTok) Table raw data point extracted: 25-34|_|28.2
+2023-12-28 22:12:13,268 - INFO: (Scraper: Instagram) Waiting for Instagram_users_by_region (2/2 seconds)
+2023-12-28 22:12:13,345 - INFO: (Scraper: TikTok) Table raw data point extracted: 35-44|_|12.8
+2023-12-28 22:12:13,453 - INFO: (Scraper: TikTok) Table raw data point extracted: 45-54|_|6.3
+2023-12-28 22:12:13,585 - INFO: (Scraper: TikTok) Table raw data point extracted: 55+|_|3.4
+2023-12-28 22:12:13,780 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram_users_by_region element
+2023-12-28 22:12:13,808 - INFO: (Scraper: Instagram) Table founded by aria-label: Instagram age demographics
+2023-12-28 22:12:13,930 - INFO: (Scraper: TikTok) Table raw data point extracted: |_|
+2023-12-28 22:12:14,013 - INFO: (Scraper: TikTok) Table raw data point extracted: Male|_|43%
+2023-12-28 22:12:14,077 - INFO: (Scraper: TikTok) Table raw data point extracted: Female|_|55%
+2023-12-28 22:12:14,173 - INFO: (Scraper: TikTok) Table raw data point extracted: Other|_|2%
+2023-12-28 22:12:14,269 - INFO: (Scraper: TikTok) Barchart (TikTok quarterly revenues - Infogram) webscraping started
+2023-12-28 22:12:14,545 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2017|_|11
+2023-12-28 22:12:14,737 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2017|_|13
+2023-12-28 22:12:14,903 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2017|_|15
+2023-12-28 22:12:14,921 - INFO: (Scraper: Instagram) Waiting for Instagram_age_demographics (1/2 seconds)
+2023-12-28 22:12:15,070 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2017|_|23
+2023-12-28 22:12:15,359 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2018|_|29
+2023-12-28 22:12:15,530 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2018|_|29
+2023-12-28 22:12:15,764 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2018|_|43
+2023-12-28 22:12:15,935 - INFO: (Scraper: Instagram) Waiting for Instagram_age_demographics (2/2 seconds)
+2023-12-28 22:12:15,996 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2018|_|49
+2023-12-28 22:12:16,410 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram_age_demographics element
+2023-12-28 22:12:16,474 - INFO: (Scraper: Instagram) Table founded by aria-label: Instagram gender demographics
+2023-12-28 22:12:16,534 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2019|_|56
+2023-12-28 22:12:17,153 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2019|_|65
+2023-12-28 22:12:17,543 - INFO: (Scraper: Instagram) Waiting for Instagram_gender_demographics (1/2 seconds)
+2023-12-28 22:12:17,830 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2019|_|82
+2023-12-28 22:12:18,135 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2019|_|167
+2023-12-28 22:12:18,538 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2020|_|347
+2023-12-28 22:12:18,616 - INFO: (Scraper: Instagram) Waiting for Instagram_gender_demographics (2/2 seconds)
+2023-12-28 22:12:19,074 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2020|_|638
+2023-12-28 22:12:19,202 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram_gender_demographics element
+2023-12-28 22:12:19,965 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2020|_|778
+2023-12-28 22:12:20,431 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2020|_|883
+2023-12-28 22:12:20,771 - INFO: (Scraper: Instagram) Waiting for Instagram estimated revenues (1/2 seconds)
+2023-12-28 22:12:21,157 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2021|_|814
+2023-12-28 22:12:21,695 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2021|_|1096
+2023-12-28 22:12:21,782 - INFO: (Scraper: Instagram) Waiting for Instagram estimated revenues (2/2 seconds)
+2023-12-28 22:12:22,107 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2021|_|1208
+2023-12-28 22:12:22,352 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram estimated revenues element
+2023-12-28 22:12:22,533 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2021|_|1579
+2023-12-28 22:12:22,634 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2022|_|1733
+2023-12-28 22:12:22,730 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2022|_|2137
+2023-12-28 22:12:22,861 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2022|_|2567
+2023-12-28 22:12:23,166 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2022|_|2964
+2023-12-28 22:12:23,457 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2023|_|2838
+2023-12-28 22:12:23,492 - INFO: (Scraper: Instagram) Waiting for Instagram monthly app users (1/2 seconds)
+2023-12-28 22:12:23,752 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2023|_|2998
+2023-12-28 22:12:24,056 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2023|_|3544
+2023-12-28 22:12:24,058 - INFO: (Scraper: TikTok) Barchart (TikTok quarterly revenues - Infogram) webscraping ended
+2023-12-28 22:12:24,139 - INFO: (Scraper: TikTok) Barchart (TikTok MAUs - Infogram) webscraping started
+2023-12-28 22:12:24,506 - INFO: (Scraper: Instagram) Waiting for Instagram monthly app users (2/2 seconds)
+2023-12-28 22:12:24,513 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2018|_|85
+2023-12-28 22:12:24,886 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2018|_|133
+2023-12-28 22:12:25,031 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Instagram monthly app users element
+2023-12-28 22:12:25,315 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2018|_|198
+2023-12-28 22:12:25,470 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2018|_|271
+2023-12-28 22:12:25,623 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2019|_|333
+2023-12-28 22:12:26,232 - INFO: (Scraper: Instagram) Waiting for Social App Users (1/2 seconds)
+2023-12-28 22:12:26,332 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2019|_|381
+2023-12-28 22:12:26,873 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2019|_|439
+2023-12-28 22:12:27,268 - INFO: (Scraper: Instagram) Waiting for Social App Users (2/2 seconds)
+2023-12-28 22:12:27,571 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2019|_|508
+2023-12-28 22:12:28,410 - INFO: (Scraper: Instagram) Attempt to take a screenshot of the Social App Users element
+2023-12-28 22:12:28,686 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2020|_|583
+2023-12-28 22:12:29,496 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2020|_|700
+2023-12-28 22:12:29,517 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:29,587 - INFO: (Scraper: Instagram) Table raw data point extracted: Launch date|_|6 October 2010
+2023-12-28 22:12:29,671 - INFO: (Scraper: Instagram) Table raw data point extracted: HQ|_|Menlo Park, California
+2023-12-28 22:12:29,764 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2020|_|667
+2023-12-28 22:12:29,804 - INFO: (Scraper: Instagram) Table raw data point extracted: People|_|Adam Mosseri (CEO), Mark Zuckerberg (Meta CEO), Kevin Systrom (co-founder), Mike Krieger (co-founder)
+2023-12-28 22:12:31,930 - INFO: (Scraper: Instagram) Table raw data point extracted: Business type|_|Subsidiary
+2023-12-28 22:12:32,341 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2020|_|756
+2023-12-28 22:12:32,382 - INFO: (Scraper: Instagram) Table raw data point extracted: Owner|_|Meta Platforms
+2023-12-28 22:12:32,611 - INFO: (Scraper: Instagram) Table raw data point extracted: Industry|_|Social media
+2023-12-28 22:12:32,824 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2021|_|812
+2023-12-28 22:12:33,105 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2021|_|902
+2023-12-28 22:12:33,257 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:33,362 - INFO: (Scraper: Instagram) Table raw data point extracted: 2015|_|0.5
+2023-12-28 22:12:33,459 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2021|_|1015
+2023-12-28 22:12:33,567 - INFO: (Scraper: Instagram) Table raw data point extracted: 2016|_|1.8
+2023-12-28 22:12:33,734 - INFO: (Scraper: Instagram) Table raw data point extracted: 2017|_|4.1
+2023-12-28 22:12:33,793 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2021|_|1112
+2023-12-28 22:12:33,946 - INFO: (Scraper: Instagram) Table raw data point extracted: 2018|_|10.3
+2023-12-28 22:12:34,157 - INFO: (Scraper: Instagram) Table raw data point extracted: 2019|_|19.4
+2023-12-28 22:12:34,466 - INFO: (Scraper: Instagram) Table raw data point extracted: 2020|_|26.8
+2023-12-28 22:12:34,473 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2022|_|1239
+2023-12-28 22:12:34,714 - INFO: (Scraper: Instagram) Table raw data point extracted: 2021|_|47.6
+2023-12-28 22:12:34,955 - INFO: (Scraper: Instagram) Table raw data point extracted: 2022|_|51.4
+2023-12-28 22:12:35,023 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2022|_|1366
+2023-12-28 22:12:35,341 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2022|_|1435
+2023-12-28 22:12:35,485 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:35,557 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2022|_|1501
+2023-12-28 22:12:35,573 - INFO: (Scraper: Instagram) Table raw data point extracted: 2015|_|3.4
+2023-12-28 22:12:35,671 - INFO: (Scraper: Instagram) Table raw data point extracted: 2016|_|5.6
+2023-12-28 22:12:35,814 - INFO: (Scraper: Instagram) Table raw data point extracted: 2017|_|8.5
+2023-12-28 22:12:35,831 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2023|_|1549
+2023-12-28 22:12:35,913 - INFO: (Scraper: Instagram) Table raw data point extracted: 2018|_|15.6
+2023-12-28 22:12:36,044 - INFO: (Scraper: Instagram) Table raw data point extracted: 2019|_|27.2
+2023-12-28 22:12:36,106 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2023|_|1587
+2023-12-28 22:12:36,137 - INFO: (Scraper: Instagram) Table raw data point extracted: 2020|_|33.8
+2023-12-28 22:12:36,241 - INFO: (Scraper: Instagram) Table raw data point extracted: 2021|_|42
+2023-12-28 22:12:36,309 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2023|_|1616
+2023-12-28 22:12:36,310 - INFO: (Scraper: TikTok) Barchart (TikTok MAUs - Infogram) webscraping ended
+2023-12-28 22:12:36,385 - INFO: (Scraper: Instagram) Table raw data point extracted: 2022|_|45
+2023-12-28 22:12:36,393 - INFO: (Scraper: TikTok) Barchart (TikTok Quarterly Downloads - Infogram) webscraping started
+2023-12-28 22:12:36,757 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2016|_|21
+2023-12-28 22:12:36,866 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:36,930 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2016|_|22
+2023-12-28 22:12:36,941 - INFO: (Scraper: Instagram) Table raw data point extracted: 2013|_|110
+2023-12-28 22:12:37,013 - INFO: (Scraper: Instagram) Table raw data point extracted: 2014|_|200
+2023-12-28 22:12:37,184 - INFO: (Scraper: Instagram) Table raw data point extracted: 2015|_|370
+2023-12-28 22:12:37,215 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2016|_|25
+2023-12-28 22:12:37,316 - INFO: (Scraper: Instagram) Table raw data point extracted: 2016|_|500
+2023-12-28 22:12:37,450 - INFO: (Scraper: Instagram) Table raw data point extracted: 2017|_|700
+2023-12-28 22:12:37,559 - INFO: (Scraper: Instagram) Table raw data point extracted: 2018|_|1000
+2023-12-28 22:12:37,568 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2017|_|23
+2023-12-28 22:12:37,644 - INFO: (Scraper: Instagram) Table raw data point extracted: 2019|_|1210
+2023-12-28 22:12:37,702 - INFO: (Scraper: Instagram) Table raw data point extracted: 2020|_|1520
+2023-12-28 22:12:37,793 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2017|_|28
+2023-12-28 22:12:37,816 - INFO: (Scraper: Instagram) Table raw data point extracted: 2021|_|1890
+2023-12-28 22:12:37,882 - INFO: (Scraper: Instagram) Table raw data point extracted: 2022|_|2270
+2023-12-28 22:12:38,038 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2017|_|34
+2023-12-28 22:12:38,233 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2017|_|47
+2023-12-28 22:12:38,242 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:38,353 - INFO: (Scraper: Instagram) Table raw data point extracted: Asia-Pacific|_|893
+2023-12-28 22:12:38,449 - INFO: (Scraper: Instagram) Table raw data point extracted: Europe|_|338
+2023-12-28 22:12:38,458 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2018|_|111
+2023-12-28 22:12:38,542 - INFO: (Scraper: Instagram) Table raw data point extracted: Latin America|_|299
+2023-12-28 22:12:38,622 - INFO: (Scraper: Instagram) Table raw data point extracted: North America|_|224
+2023-12-28 22:12:38,672 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2018|_|156
+2023-12-28 22:12:38,697 - INFO: (Scraper: Instagram) Table raw data point extracted: Middle East and North Africa|_|156
+2023-12-28 22:12:38,786 - INFO: (Scraper: Instagram) Table raw data point extracted: Sub-Saharan Africa|_|86
+2023-12-28 22:12:38,891 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2018|_|184
+2023-12-28 22:12:39,092 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2018|_|206
+2023-12-28 22:12:39,136 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:39,227 - INFO: (Scraper: Instagram) Table raw data point extracted: 13-17|_|7
+2023-12-28 22:12:39,407 - INFO: (Scraper: Instagram) Table raw data point extracted: 18-24|_|30
+2023-12-28 22:12:39,417 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2019|_|188
+2023-12-28 22:12:39,485 - INFO: (Scraper: Instagram) Table raw data point extracted: 25-34|_|33
+2023-12-28 22:12:39,558 - INFO: (Scraper: Instagram) Table raw data point extracted: 35-44|_|16
+2023-12-28 22:12:39,625 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2019|_|157
+2023-12-28 22:12:39,645 - INFO: (Scraper: Instagram) Table raw data point extracted: 45-54|_|8
+2023-12-28 22:12:39,699 - INFO: (Scraper: Instagram) Table raw data point extracted: 55-64|_|4
+2023-12-28 22:12:39,797 - INFO: (Scraper: Instagram) Table raw data point extracted: 65+|_|2
+2023-12-28 22:12:39,806 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2019|_|176
+2023-12-28 22:12:39,939 - INFO: (Scraper: Instagram) Table raw data point extracted: |_|
+2023-12-28 22:12:39,996 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2019|_|201
+2023-12-28 22:12:40,016 - INFO: (Scraper: Instagram) Table raw data point extracted: Male|_|49.2
+2023-12-28 22:12:40,084 - INFO: (Scraper: Instagram) Table raw data point extracted: Female|_|50.8
+2023-12-28 22:12:40,157 - INFO: (Scraper: Instagram) Barchart (Instagram revenues - Infogram) webscraping started
+2023-12-28 22:12:40,187 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2020|_|318
+2023-12-28 22:12:40,360 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2020|_|301
+2023-12-28 22:12:40,420 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2015|_|111
+2023-12-28 22:12:40,699 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2020|_|188
+2023-12-28 22:12:40,762 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2015|_|139
+2023-12-28 22:12:40,994 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2020|_|174
+2023-12-28 22:12:41,125 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2015|_|141
+2023-12-28 22:12:41,321 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2021|_|177
+2023-12-28 22:12:41,492 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2015|_|201
+2023-12-28 22:12:41,673 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2021|_|205
+2023-12-28 22:12:41,817 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2016|_|261
+2023-12-28 22:12:41,951 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2021|_|186
+2023-12-28 22:12:42,042 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2016|_|363
+2023-12-28 22:12:42,221 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2021|_|173
+2023-12-28 22:12:42,292 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2016|_|430
+2023-12-28 22:12:42,465 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2022|_|188
+2023-12-28 22:12:42,512 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2016|_|782
+2023-12-28 22:12:42,674 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2022|_|187
+2023-12-28 22:12:42,768 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2017|_|568
+2023-12-28 22:12:42,936 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2022|_|196
+2023-12-28 22:12:43,031 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2017|_|794
+2023-12-28 22:12:43,168 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q4 2022|_|177
+2023-12-28 22:12:43,239 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2017|_|1080
+2023-12-28 22:12:43,388 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q1 2023|_|214
+2023-12-28 22:12:43,496 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2017|_|1664
+2023-12-28 22:12:43,621 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q2 2023|_|229
+2023-12-28 22:12:43,671 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2018|_|1693
+2023-12-28 22:12:43,802 - INFO: (Scraper: TikTok) Chart raw data point extracted: Q3 2023|_|220
+2023-12-28 22:12:43,802 - INFO: (Scraper: TikTok) Barchart (TikTok Quarterly Downloads - Infogram) webscraping ended
+2023-12-28 22:12:43,866 - INFO: (Scraper: TikTok) Barchart (Social App Users - Infogram) webscraping started
+2023-12-28 22:12:43,867 - INFO: (Scraper: TikTok) Barchart (Social App Users - Infogram) webscraping ended
+2023-12-28 22:12:43,867 - INFO: (Scraper: TikTok) All barchart webscraping ended
+2023-12-28 22:12:43,874 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2018|_|2030
+2023-12-28 22:12:43,928 - INFO: (Scraper: TikTok) Page disposed
+2023-12-28 22:12:44,100 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2018|_|2609
+2023-12-28 22:12:44,254 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2018|_|4031
+2023-12-28 22:12:44,381 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2019|_|3997
+2023-12-28 22:12:44,512 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2019|_|4459
+2023-12-28 22:12:44,699 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2019|_|4966
+2023-12-28 22:12:44,815 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2019|_|6016
+2023-12-28 22:12:44,933 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2020|_|5375
+2023-12-28 22:12:45,062 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2020|_|5899
+2023-12-28 22:12:45,496 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2020|_|6835
+2023-12-28 22:12:45,631 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2020|_|8732
+2023-12-28 22:12:45,757 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2021|_|9388
+2023-12-28 22:12:45,954 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2021|_|11920
+2023-12-28 22:12:46,097 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2021|_|12186
+2023-12-28 22:12:46,230 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2021|_|14140
+2023-12-28 22:12:46,370 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2022|_|12000
+2023-12-28 22:12:46,517 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2022|_|12681
+2023-12-28 22:12:46,658 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2022|_|12194
+2023-12-28 22:12:46,813 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2022|_|14570
+2023-12-28 22:12:46,948 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2023|_|12747
+2023-12-28 22:12:47,070 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2023|_|14075
+2023-12-28 22:12:47,216 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2023|_|15229
+2023-12-28 22:12:47,217 - INFO: (Scraper: Instagram) Barchart (Instagram revenues - Infogram) webscraping ended
+2023-12-28 22:12:47,273 - INFO: (Scraper: Instagram) Barchart (Instagram monthly app users - Infogram) webscraping started
+2023-12-28 22:12:47,526 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2013|_|90
+2023-12-28 22:12:47,670 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2013|_|110
+2023-12-28 22:12:47,794 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2013|_|130
+2023-12-28 22:12:47,938 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2013|_|150
+2023-12-28 22:12:48,056 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2014|_|175
+2023-12-28 22:12:48,194 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2014|_|200
+2023-12-28 22:12:48,343 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2014|_|250
+2023-12-28 22:12:48,479 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2014|_|300
+2023-12-28 22:12:48,609 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2015|_|335
+2023-12-28 22:12:48,740 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2015|_|370
+2023-12-28 22:12:48,868 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2015|_|400
+2023-12-28 22:12:48,990 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2015|_|435
+2023-12-28 22:12:49,107 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2016|_|475
+2023-12-28 22:12:49,239 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2016|_|500
+2023-12-28 22:12:49,386 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2016|_|545
+2023-12-28 22:12:49,504 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2016|_|600
+2023-12-28 22:12:49,625 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2017|_|640
+2023-12-28 22:12:49,759 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2017|_|700
+2023-12-28 22:12:49,904 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2017|_|800
+2023-12-28 22:12:50,039 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2017|_|885
+2023-12-28 22:12:50,164 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2018|_|960
+2023-12-28 22:12:50,275 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2018|_|1000
+2023-12-28 22:12:50,414 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2018|_|1060
+2023-12-28 22:12:50,565 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2018|_|1115
+2023-12-28 22:12:50,708 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2019|_|1160
+2023-12-28 22:12:50,823 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2019|_|1210
+2023-12-28 22:12:50,956 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2019|_|1255
+2023-12-28 22:12:51,073 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2019|_|1300
+2023-12-28 22:12:51,255 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2020|_|1365
+2023-12-28 22:12:51,395 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2020|_|1520
+2023-12-28 22:12:51,526 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2020|_|1630
+2023-12-28 22:12:51,654 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2020|_|1755
+2023-12-28 22:12:51,799 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2021|_|1825
+2023-12-28 22:12:51,920 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2021|_|1890
+2023-12-28 22:12:52,037 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2021|_|2010
+2023-12-28 22:12:52,180 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2021|_|2145
+2023-12-28 22:12:52,305 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2022|_|2205
+2023-12-28 22:12:52,473 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2022|_|2270
+2023-12-28 22:12:52,611 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2022|_|2335
+2023-12-28 22:12:52,761 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q4 2022|_|2350
+2023-12-28 22:12:52,904 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q1 2023|_|2365
+2023-12-28 22:12:53,036 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q2 2023|_|2385
+2023-12-28 22:12:53,172 - INFO: (Scraper: Instagram) Chart raw data point extracted: Q3 2023|_|2400
+2023-12-28 22:12:53,173 - INFO: (Scraper: Instagram) Barchart (Instagram monthly app users - Infogram) webscraping ended
+2023-12-28 22:12:53,224 - INFO: (Scraper: Instagram) Barchart (Social App Users - Infogram) webscraping started
+2023-12-28 22:12:53,226 - INFO: (Scraper: Instagram) Barchart (Social App Users - Infogram) webscraping ended
+2023-12-28 22:12:53,227 - INFO: (Scraper: Instagram) All barchart webscraping ended
+2023-12-28 22:12:53,272 - INFO: (Scraper: Instagram) Page disposed
+2023-12-28 22:12:54,752 - INFO: (Database: raw.db) Database will be created from scratch to connect
+2023-12-28 22:12:54,817 - INFO: (Database: raw.db) Connection established 
+2023-12-28 22:12:54,818 - INFO: (Database: raw.db) Attempting to commit all target data
+2023-12-28 22:12:54,818 - INFO: (Database: raw.db) Attempting to commit all target data
+2023-12-28 22:12:55,333 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:12:55,334 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:12:55,483 - INFO: (Database: raw.db) Committed datapoint: Launch date|_|6 October 2010
+2023-12-28 22:12:55,485 - INFO: (Database: raw.db) Committed datapoint: Launch date|_|September 2016 (China); September 2017 (International)
+2023-12-28 22:12:55,616 - INFO: (Database: raw.db) Committed datapoint: HQ|_|Menlo Park, California
+2023-12-28 22:12:55,617 - INFO: (Database: raw.db) Committed datapoint: HQ|_|Beijing, China
+2023-12-28 22:12:55,741 - INFO: (Database: raw.db) Committed datapoint: People|_|Adam Mosseri (CEO), Mark Zuckerberg (Meta CEO), Kevin Systrom (co-founder), Mike Krieger (co-founder)
+2023-12-28 22:12:55,742 - INFO: (Database: raw.db) Committed datapoint: People|_|Liang Rubo (ByteDance CEO), Shouzi Chew (TikTok CEO), Vanessa Pappas (TikTok COO)
+2023-12-28 22:12:55,858 - INFO: (Database: raw.db) Committed datapoint: Business type|_|Subsidiary
+2023-12-28 22:12:55,868 - INFO: (Database: raw.db) Committed datapoint: Business type|_|Private, subsidiary
+2023-12-28 22:12:56,036 - INFO: (Database: raw.db) Committed datapoint: Owner|_|Meta Platforms
+2023-12-28 22:12:56,039 - INFO: (Database: raw.db) Committed datapoint: Owner|_|ByteDance
+2023-12-28 22:12:56,169 - INFO: (Database: raw.db) Committed datapoint: Industry|_|Social media
+2023-12-28 22:12:56,171 - INFO: (Database: raw.db) Committed datapoint: Industry|_|Social networking
+2023-12-28 22:12:56,345 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:12:56,346 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:12:58,881 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:12:58,881 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:12:59,885 - INFO: (Database: raw.db) Committed datapoint: 2015|_|0.5
+2023-12-28 22:12:59,885 - INFO: (Database: raw.db) Committed datapoint: 2017|_|63
+2023-12-28 22:13:00,558 - INFO: (Database: raw.db) Committed datapoint: 2016|_|1.8
+2023-12-28 22:13:00,561 - INFO: (Database: raw.db) Committed datapoint: 2018|_|150
+2023-12-28 22:13:00,967 - INFO: (Database: raw.db) Committed datapoint: 2017|_|4.1
+2023-12-28 22:13:00,968 - INFO: (Database: raw.db) Committed datapoint: 2019|_|350
+2023-12-28 22:13:01,262 - INFO: (Database: raw.db) Committed datapoint: 2018|_|10.3
+2023-12-28 22:13:01,262 - INFO: (Database: raw.db) Committed datapoint: 2020|_|2640
+2023-12-28 22:13:01,423 - INFO: (Database: raw.db) Committed datapoint: 2019|_|19.4
+2023-12-28 22:13:01,424 - INFO: (Database: raw.db) Committed datapoint: 2021|_|4697
+2023-12-28 22:13:01,620 - INFO: (Database: raw.db) Committed datapoint: 2020|_|26.8
+2023-12-28 22:13:01,621 - INFO: (Database: raw.db) Committed datapoint: 2022|_|9401
+2023-12-28 22:13:01,902 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:01,905 - INFO: (Database: raw.db) Committed datapoint: 2021|_|47.6
+2023-12-28 22:13:02,142 - INFO: (Database: raw.db) Committed datapoint: 2022|_|51.4
+2023-12-28 22:13:02,438 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:02,444 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:02,858 - INFO: (Database: raw.db) Committed datapoint: 2018|_|133
+2023-12-28 22:13:03,057 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:03,058 - INFO: (Database: raw.db) Committed datapoint: 2019|_|381
+2023-12-28 22:13:03,144 - INFO: (Database: raw.db) Committed datapoint: 2015|_|3.4
+2023-12-28 22:13:03,146 - INFO: (Database: raw.db) Committed datapoint: 2020|_|700
+2023-12-28 22:13:03,268 - INFO: (Database: raw.db) Committed datapoint: 2016|_|5.6
+2023-12-28 22:13:03,269 - INFO: (Database: raw.db) Committed datapoint: 2021|_|902
+2023-12-28 22:13:03,356 - INFO: (Database: raw.db) Committed datapoint: 2017|_|8.5
+2023-12-28 22:13:03,357 - INFO: (Database: raw.db) Committed datapoint: 2022|_|1366
+2023-12-28 22:13:03,682 - INFO: (Database: raw.db) Committed datapoint: 2018|_|15.6
+2023-12-28 22:13:03,683 - INFO: (Database: raw.db) Committed datapoint: 2023|_|1587
+2023-12-28 22:13:04,128 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:04,130 - INFO: (Database: raw.db) Committed datapoint: 2019|_|27.2
+2023-12-28 22:13:04,284 - INFO: (Database: raw.db) Committed datapoint: 2020|_|33.8
+2023-12-28 22:13:04,399 - INFO: (Database: raw.db) Committed datapoint: |_||_||_||_||_|
+2023-12-28 22:13:04,400 - INFO: (Database: raw.db) Committed datapoint: 2021|_|42
+2023-12-28 22:13:04,583 - INFO: (Database: raw.db) Committed datapoint: 2018|_|88|_|12|_|8|_|5|_|6
+2023-12-28 22:13:04,583 - INFO: (Database: raw.db) Committed datapoint: 2022|_|45
+2023-12-28 22:13:04,734 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:04,742 - INFO: (Database: raw.db) Committed datapoint: 2019|_|185|_|49|_|59|_|33|_|28
+2023-12-28 22:13:04,881 - INFO: (Database: raw.db) Committed datapoint: 2020|_|300|_|82|_|104|_|61|_|55
+2023-12-28 22:13:05,015 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:05,017 - INFO: (Database: raw.db) Committed datapoint: 2021|_|404|_|110|_|138|_|97|_|82
+2023-12-28 22:13:05,143 - INFO: (Database: raw.db) Committed datapoint: 2013|_|110
+2023-12-28 22:13:05,144 - INFO: (Database: raw.db) Committed datapoint: 2022|_|590|_|169|_|199|_|168|_|129
+2023-12-28 22:13:05,365 - INFO: (Database: raw.db) Committed datapoint: 2014|_|200
+2023-12-28 22:13:05,366 - INFO: (Database: raw.db) Committed datapoint: 2023|_|682|_|192|_|238|_|207|_|171
+2023-12-28 22:13:05,508 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:05,510 - INFO: (Database: raw.db) Committed datapoint: 2015|_|370
+2023-12-28 22:13:05,628 - INFO: (Database: raw.db) Committed datapoint: 2016|_|500
+2023-12-28 22:13:05,716 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:05,717 - INFO: (Database: raw.db) Committed datapoint: 2017|_|700
+2023-12-28 22:13:05,854 - INFO: (Database: raw.db) Committed datapoint: 2017|_|33
+2023-12-28 22:13:05,854 - INFO: (Database: raw.db) Committed datapoint: 2018|_|1000
+2023-12-28 22:13:05,938 - INFO: (Database: raw.db) Committed datapoint: 2018|_|150
+2023-12-28 22:13:05,939 - INFO: (Database: raw.db) Committed datapoint: 2019|_|1210
+2023-12-28 22:13:06,051 - INFO: (Database: raw.db) Committed datapoint: 2019|_|400
+2023-12-28 22:13:06,052 - INFO: (Database: raw.db) Committed datapoint: 2020|_|1520
+2023-12-28 22:13:06,172 - INFO: (Database: raw.db) Committed datapoint: 2020|_|600
+2023-12-28 22:13:06,174 - INFO: (Database: raw.db) Committed datapoint: 2021|_|1890
+2023-12-28 22:13:06,267 - INFO: (Database: raw.db) Committed datapoint: 2021|_|710
+2023-12-28 22:13:06,269 - INFO: (Database: raw.db) Committed datapoint: 2022|_|2270
+2023-12-28 22:13:06,399 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:06,401 - INFO: (Database: raw.db) Committed datapoint: 2022|_|780
+2023-12-28 22:13:06,504 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:06,782 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:06,900 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:06,901 - INFO: (Database: raw.db) Committed datapoint: Asia-Pacific|_|893
+2023-12-28 22:13:06,998 - INFO: (Database: raw.db) Committed datapoint: 2017|_|68
+2023-12-28 22:13:06,999 - INFO: (Database: raw.db) Committed datapoint: Europe|_|338
+2023-12-28 22:13:07,107 - INFO: (Database: raw.db) Committed datapoint: 2018|_|200
+2023-12-28 22:13:07,110 - INFO: (Database: raw.db) Committed datapoint: Latin America|_|299
+2023-12-28 22:13:07,322 - INFO: (Database: raw.db) Committed datapoint: 2019|_|857
+2023-12-28 22:13:07,324 - INFO: (Database: raw.db) Committed datapoint: North America|_|224
+2023-12-28 22:13:07,409 - INFO: (Database: raw.db) Committed datapoint: 2020|_|1579
+2023-12-28 22:13:07,410 - INFO: (Database: raw.db) Committed datapoint: Middle East and North Africa|_|156
+2023-12-28 22:13:07,506 - INFO: (Database: raw.db) Committed datapoint: 2021|_|2560
+2023-12-28 22:13:07,506 - INFO: (Database: raw.db) Committed datapoint: Sub-Saharan Africa|_|86
+2023-12-28 22:13:07,603 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:07,605 - INFO: (Database: raw.db) Committed datapoint: 2022|_|3301
+2023-12-28 22:13:07,746 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:08,013 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:08,096 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:08,097 - INFO: (Database: raw.db) Committed datapoint: 13-17|_|7
+2023-12-28 22:13:08,189 - INFO: (Database: raw.db) Committed datapoint: 13-17|_|14.4
+2023-12-28 22:13:08,190 - INFO: (Database: raw.db) Committed datapoint: 18-24|_|30
+2023-12-28 22:13:08,289 - INFO: (Database: raw.db) Committed datapoint: 18-24|_|34.9
+2023-12-28 22:13:08,290 - INFO: (Database: raw.db) Committed datapoint: 25-34|_|33
+2023-12-28 22:13:08,435 - INFO: (Database: raw.db) Committed datapoint: 25-34|_|28.2
+2023-12-28 22:13:08,436 - INFO: (Database: raw.db) Committed datapoint: 35-44|_|16
+2023-12-28 22:13:08,620 - INFO: (Database: raw.db) Committed datapoint: 35-44|_|12.8
+2023-12-28 22:13:08,620 - INFO: (Database: raw.db) Committed datapoint: 45-54|_|8
+2023-12-28 22:13:08,748 - INFO: (Database: raw.db) Committed datapoint: 45-54|_|6.3
+2023-12-28 22:13:08,749 - INFO: (Database: raw.db) Committed datapoint: 55-64|_|4
+2023-12-28 22:13:08,854 - INFO: (Database: raw.db) Committed datapoint: 55+|_|3.4
+2023-12-28 22:13:08,855 - INFO: (Database: raw.db) Committed datapoint: 65+|_|2
+2023-12-28 22:13:08,970 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:08,970 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:09,334 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:09,334 - INFO: (Database: raw.db) Committed datapoint: |_|
+2023-12-28 22:13:09,526 - INFO: (Database: raw.db) Committed datapoint: Male|_|43%
+2023-12-28 22:13:09,526 - INFO: (Database: raw.db) Committed datapoint: Male|_|49.2
+2023-12-28 22:13:09,619 - INFO: (Database: raw.db) Committed datapoint: Female|_|55%
+2023-12-28 22:13:09,620 - INFO: (Database: raw.db) Committed datapoint: Female|_|50.8
+2023-12-28 22:13:09,721 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:09,722 - INFO: (Database: raw.db) All expected attempted tables from raw_gram datapoints commit ended
+2023-12-28 22:13:09,724 - INFO: (Database: raw.db) Committed datapoint: Other|_|2%
+2023-12-28 22:13:09,806 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:09,808 - INFO: (Database: raw.db) All expected attempted tables from raw_tktk datapoints commit ended
+2023-12-28 22:13:10,072 - INFO: (Database: raw.db) Committed datapoint: Instagram revenues - Infogram
+2023-12-28 22:13:10,151 - INFO: (Database: raw.db) Committed datapoint: TikTok quarterly revenues - Infogram
+2023-12-28 22:13:10,154 - INFO: (Database: raw.db) Committed datapoint: Q1 2015|_|111
+2023-12-28 22:13:10,248 - INFO: (Database: raw.db) Committed datapoint: Q1 2017|_|11
+2023-12-28 22:13:10,249 - INFO: (Database: raw.db) Committed datapoint: Q2 2015|_|139
+2023-12-28 22:13:10,349 - INFO: (Database: raw.db) Committed datapoint: Q2 2017|_|13
+2023-12-28 22:13:10,350 - INFO: (Database: raw.db) Committed datapoint: Q3 2015|_|141
+2023-12-28 22:13:10,483 - INFO: (Database: raw.db) Committed datapoint: Q3 2017|_|15
+2023-12-28 22:13:10,484 - INFO: (Database: raw.db) Committed datapoint: Q4 2015|_|201
+2023-12-28 22:13:10,658 - INFO: (Database: raw.db) Committed datapoint: Q4 2017|_|23
+2023-12-28 22:13:10,659 - INFO: (Database: raw.db) Committed datapoint: Q1 2016|_|261
+2023-12-28 22:13:10,824 - INFO: (Database: raw.db) Committed datapoint: Q1 2018|_|29
+2023-12-28 22:13:10,824 - INFO: (Database: raw.db) Committed datapoint: Q2 2016|_|363
+2023-12-28 22:13:10,919 - INFO: (Database: raw.db) Committed datapoint: Q2 2018|_|29
+2023-12-28 22:13:10,920 - INFO: (Database: raw.db) Committed datapoint: Q3 2016|_|430
+2023-12-28 22:13:11,005 - INFO: (Database: raw.db) Committed datapoint: Q3 2018|_|43
+2023-12-28 22:13:11,006 - INFO: (Database: raw.db) Committed datapoint: Q4 2016|_|782
+2023-12-28 22:13:11,194 - INFO: (Database: raw.db) Committed datapoint: Q4 2018|_|49
+2023-12-28 22:13:11,195 - INFO: (Database: raw.db) Committed datapoint: Q1 2017|_|568
+2023-12-28 22:13:11,310 - INFO: (Database: raw.db) Committed datapoint: Q1 2019|_|56
+2023-12-28 22:13:11,310 - INFO: (Database: raw.db) Committed datapoint: Q2 2017|_|794
+2023-12-28 22:13:11,440 - INFO: (Database: raw.db) Committed datapoint: Q2 2019|_|65
+2023-12-28 22:13:11,441 - INFO: (Database: raw.db) Committed datapoint: Q3 2017|_|1080
+2023-12-28 22:13:11,539 - INFO: (Database: raw.db) Committed datapoint: Q3 2019|_|82
+2023-12-28 22:13:11,540 - INFO: (Database: raw.db) Committed datapoint: Q4 2017|_|1664
+2023-12-28 22:13:11,632 - INFO: (Database: raw.db) Committed datapoint: Q4 2019|_|167
+2023-12-28 22:13:11,633 - INFO: (Database: raw.db) Committed datapoint: Q1 2018|_|1693
+2023-12-28 22:13:11,740 - INFO: (Database: raw.db) Committed datapoint: Q1 2020|_|347
+2023-12-28 22:13:11,742 - INFO: (Database: raw.db) Committed datapoint: Q2 2018|_|2030
+2023-12-28 22:13:11,851 - INFO: (Database: raw.db) Committed datapoint: Q2 2020|_|638
+2023-12-28 22:13:11,852 - INFO: (Database: raw.db) Committed datapoint: Q3 2018|_|2609
+2023-12-28 22:13:11,978 - INFO: (Database: raw.db) Committed datapoint: Q3 2020|_|778
+2023-12-28 22:13:11,979 - INFO: (Database: raw.db) Committed datapoint: Q4 2018|_|4031
+2023-12-28 22:13:12,084 - INFO: (Database: raw.db) Committed datapoint: Q4 2020|_|883
+2023-12-28 22:13:12,085 - INFO: (Database: raw.db) Committed datapoint: Q1 2019|_|3997
+2023-12-28 22:13:12,185 - INFO: (Database: raw.db) Committed datapoint: Q1 2021|_|814
+2023-12-28 22:13:12,186 - INFO: (Database: raw.db) Committed datapoint: Q2 2019|_|4459
+2023-12-28 22:13:12,351 - INFO: (Database: raw.db) Committed datapoint: Q2 2021|_|1096
+2023-12-28 22:13:12,352 - INFO: (Database: raw.db) Committed datapoint: Q3 2019|_|4966
+2023-12-28 22:13:12,450 - INFO: (Database: raw.db) Committed datapoint: Q3 2021|_|1208
+2023-12-28 22:13:12,451 - INFO: (Database: raw.db) Committed datapoint: Q4 2019|_|6016
+2023-12-28 22:13:12,579 - INFO: (Database: raw.db) Committed datapoint: Q4 2021|_|1579
+2023-12-28 22:13:12,580 - INFO: (Database: raw.db) Committed datapoint: Q1 2020|_|5375
+2023-12-28 22:13:12,696 - INFO: (Database: raw.db) Committed datapoint: Q1 2022|_|1733
+2023-12-28 22:13:12,697 - INFO: (Database: raw.db) Committed datapoint: Q2 2020|_|5899
+2023-12-28 22:13:12,885 - INFO: (Database: raw.db) Committed datapoint: Q2 2022|_|2137
+2023-12-28 22:13:12,886 - INFO: (Database: raw.db) Committed datapoint: Q3 2020|_|6835
+2023-12-28 22:13:12,971 - INFO: (Database: raw.db) Committed datapoint: Q3 2022|_|2567
+2023-12-28 22:13:12,972 - INFO: (Database: raw.db) Committed datapoint: Q4 2020|_|8732
+2023-12-28 22:13:13,075 - INFO: (Database: raw.db) Committed datapoint: Q4 2022|_|2964
+2023-12-28 22:13:13,076 - INFO: (Database: raw.db) Committed datapoint: Q1 2021|_|9388
+2023-12-28 22:13:13,170 - INFO: (Database: raw.db) Committed datapoint: Q1 2023|_|2838
+2023-12-28 22:13:13,171 - INFO: (Database: raw.db) Committed datapoint: Q2 2021|_|11920
+2023-12-28 22:13:13,256 - INFO: (Database: raw.db) Committed datapoint: Q2 2023|_|2998
+2023-12-28 22:13:13,260 - INFO: (Database: raw.db) Committed datapoint: Q3 2021|_|12186
+2023-12-28 22:13:13,354 - INFO: (Database: raw.db) Committed datapoint: Q3 2023|_|3544
+2023-12-28 22:13:13,355 - INFO: (Database: raw.db) Committed datapoint: Q4 2021|_|14140
+2023-12-28 22:13:13,448 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:13,533 - INFO: (Database: raw.db) Committed datapoint: Q1 2022|_|12000
+2023-12-28 22:13:13,783 - INFO: (Database: raw.db) Committed datapoint: Q2 2022|_|12681
+2023-12-28 22:13:13,787 - INFO: (Database: raw.db) Committed datapoint: TikTok MAUs - Infogram
+2023-12-28 22:13:13,880 - INFO: (Database: raw.db) Committed datapoint: Q3 2022|_|12194
+2023-12-28 22:13:13,883 - INFO: (Database: raw.db) Committed datapoint: Q1 2018|_|85
+2023-12-28 22:13:14,032 - INFO: (Database: raw.db) Committed datapoint: Q4 2022|_|14570
+2023-12-28 22:13:14,033 - INFO: (Database: raw.db) Committed datapoint: Q2 2018|_|133
+2023-12-28 22:13:14,216 - INFO: (Database: raw.db) Committed datapoint: Q1 2023|_|12747
+2023-12-28 22:13:14,217 - INFO: (Database: raw.db) Committed datapoint: Q3 2018|_|198
+2023-12-28 22:13:14,302 - INFO: (Database: raw.db) Committed datapoint: Q2 2023|_|14075
+2023-12-28 22:13:14,303 - INFO: (Database: raw.db) Committed datapoint: Q4 2018|_|271
+2023-12-28 22:13:14,395 - INFO: (Database: raw.db) Committed datapoint: Q3 2023|_|15229
+2023-12-28 22:13:14,396 - INFO: (Database: raw.db) Committed datapoint: Q1 2019|_|333
+2023-12-28 22:13:14,485 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:14,620 - INFO: (Database: raw.db) Committed datapoint: Q2 2019|_|381
+2023-12-28 22:13:14,824 - INFO: (Database: raw.db) Committed datapoint: Q3 2019|_|439
+2023-12-28 22:13:14,825 - INFO: (Database: raw.db) Committed datapoint: Instagram monthly app users - Infogram
+2023-12-28 22:13:14,908 - INFO: (Database: raw.db) Committed datapoint: Q4 2019|_|508
+2023-12-28 22:13:14,909 - INFO: (Database: raw.db) Committed datapoint: Q1 2013|_|90
+2023-12-28 22:13:15,004 - INFO: (Database: raw.db) Committed datapoint: Q1 2020|_|583
+2023-12-28 22:13:15,005 - INFO: (Database: raw.db) Committed datapoint: Q2 2013|_|110
+2023-12-28 22:13:15,160 - INFO: (Database: raw.db) Committed datapoint: Q2 2020|_|700
+2023-12-28 22:13:15,161 - INFO: (Database: raw.db) Committed datapoint: Q3 2013|_|130
+2023-12-28 22:13:15,376 - INFO: (Database: raw.db) Committed datapoint: Q3 2020|_|667
+2023-12-28 22:13:15,377 - INFO: (Database: raw.db) Committed datapoint: Q4 2013|_|150
+2023-12-28 22:13:15,730 - INFO: (Database: raw.db) Committed datapoint: Q4 2020|_|756
+2023-12-28 22:13:15,732 - INFO: (Database: raw.db) Committed datapoint: Q1 2014|_|175
+2023-12-28 22:13:15,833 - INFO: (Database: raw.db) Committed datapoint: Q1 2021|_|812
+2023-12-28 22:13:15,834 - INFO: (Database: raw.db) Committed datapoint: Q2 2014|_|200
+2023-12-28 22:13:15,918 - INFO: (Database: raw.db) Committed datapoint: Q2 2021|_|902
+2023-12-28 22:13:15,918 - INFO: (Database: raw.db) Committed datapoint: Q3 2014|_|250
+2023-12-28 22:13:16,015 - INFO: (Database: raw.db) Committed datapoint: Q3 2021|_|1015
+2023-12-28 22:13:16,016 - INFO: (Database: raw.db) Committed datapoint: Q4 2014|_|300
+2023-12-28 22:13:16,101 - INFO: (Database: raw.db) Committed datapoint: Q4 2021|_|1112
+2023-12-28 22:13:16,103 - INFO: (Database: raw.db) Committed datapoint: Q1 2015|_|335
+2023-12-28 22:13:16,267 - INFO: (Database: raw.db) Committed datapoint: Q1 2022|_|1239
+2023-12-28 22:13:16,267 - INFO: (Database: raw.db) Committed datapoint: Q2 2015|_|370
+2023-12-28 22:13:16,370 - INFO: (Database: raw.db) Committed datapoint: Q2 2022|_|1366
+2023-12-28 22:13:16,370 - INFO: (Database: raw.db) Committed datapoint: Q3 2015|_|400
+2023-12-28 22:13:16,478 - INFO: (Database: raw.db) Committed datapoint: Q3 2022|_|1435
+2023-12-28 22:13:16,479 - INFO: (Database: raw.db) Committed datapoint: Q4 2015|_|435
+2023-12-28 22:13:16,576 - INFO: (Database: raw.db) Committed datapoint: Q4 2022|_|1501
+2023-12-28 22:13:16,578 - INFO: (Database: raw.db) Committed datapoint: Q1 2016|_|475
+2023-12-28 22:13:16,659 - INFO: (Database: raw.db) Committed datapoint: Q1 2023|_|1549
+2023-12-28 22:13:16,661 - INFO: (Database: raw.db) Committed datapoint: Q2 2016|_|500
+2023-12-28 22:13:16,865 - INFO: (Database: raw.db) Committed datapoint: Q2 2023|_|1587
+2023-12-28 22:13:16,866 - INFO: (Database: raw.db) Committed datapoint: Q3 2016|_|545
+2023-12-28 22:13:16,982 - INFO: (Database: raw.db) Committed datapoint: Q3 2023|_|1616
+2023-12-28 22:13:16,983 - INFO: (Database: raw.db) Committed datapoint: Q4 2016|_|600
+2023-12-28 22:13:17,091 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:17,305 - INFO: (Database: raw.db) Committed datapoint: Q1 2017|_|640
+2023-12-28 22:13:17,575 - INFO: (Database: raw.db) Committed datapoint: Q2 2017|_|700
+2023-12-28 22:13:17,578 - INFO: (Database: raw.db) Committed datapoint: TikTok Quarterly Downloads - Infogram
+2023-12-28 22:13:17,753 - INFO: (Database: raw.db) Committed datapoint: Q3 2017|_|800
+2023-12-28 22:13:17,753 - INFO: (Database: raw.db) Committed datapoint: Q2 2016|_|21
+2023-12-28 22:13:17,930 - INFO: (Database: raw.db) Committed datapoint: Q4 2017|_|885
+2023-12-28 22:13:17,931 - INFO: (Database: raw.db) Committed datapoint: Q3 2016|_|22
+2023-12-28 22:13:18,083 - INFO: (Database: raw.db) Committed datapoint: Q1 2018|_|960
+2023-12-28 22:13:18,083 - INFO: (Database: raw.db) Committed datapoint: Q4 2016|_|25
+2023-12-28 22:13:18,223 - INFO: (Database: raw.db) Committed datapoint: Q2 2018|_|1000
+2023-12-28 22:13:18,223 - INFO: (Database: raw.db) Committed datapoint: Q1 2017|_|23
+2023-12-28 22:13:18,305 - INFO: (Database: raw.db) Committed datapoint: Q3 2018|_|1060
+2023-12-28 22:13:18,307 - INFO: (Database: raw.db) Committed datapoint: Q2 2017|_|28
+2023-12-28 22:13:18,409 - INFO: (Database: raw.db) Committed datapoint: Q4 2018|_|1115
+2023-12-28 22:13:18,410 - INFO: (Database: raw.db) Committed datapoint: Q3 2017|_|34
+2023-12-28 22:13:18,531 - INFO: (Database: raw.db) Committed datapoint: Q1 2019|_|1160
+2023-12-28 22:13:18,533 - INFO: (Database: raw.db) Committed datapoint: Q4 2017|_|47
+2023-12-28 22:13:18,646 - INFO: (Database: raw.db) Committed datapoint: Q2 2019|_|1210
+2023-12-28 22:13:18,647 - INFO: (Database: raw.db) Committed datapoint: Q1 2018|_|111
+2023-12-28 22:13:18,733 - INFO: (Database: raw.db) Committed datapoint: Q3 2019|_|1255
+2023-12-28 22:13:18,734 - INFO: (Database: raw.db) Committed datapoint: Q2 2018|_|156
+2023-12-28 22:13:18,834 - INFO: (Database: raw.db) Committed datapoint: Q4 2019|_|1300
+2023-12-28 22:13:18,834 - INFO: (Database: raw.db) Committed datapoint: Q3 2018|_|184
+2023-12-28 22:13:18,924 - INFO: (Database: raw.db) Committed datapoint: Q1 2020|_|1365
+2023-12-28 22:13:18,925 - INFO: (Database: raw.db) Committed datapoint: Q4 2018|_|206
+2023-12-28 22:13:19,031 - INFO: (Database: raw.db) Committed datapoint: Q2 2020|_|1520
+2023-12-28 22:13:19,032 - INFO: (Database: raw.db) Committed datapoint: Q1 2019|_|188
+2023-12-28 22:13:19,272 - INFO: (Database: raw.db) Committed datapoint: Q3 2020|_|1630
+2023-12-28 22:13:19,273 - INFO: (Database: raw.db) Committed datapoint: Q2 2019|_|157
+2023-12-28 22:13:19,383 - INFO: (Database: raw.db) Committed datapoint: Q4 2020|_|1755
+2023-12-28 22:13:19,384 - INFO: (Database: raw.db) Committed datapoint: Q3 2019|_|176
+2023-12-28 22:13:19,483 - INFO: (Database: raw.db) Committed datapoint: Q1 2021|_|1825
+2023-12-28 22:13:19,484 - INFO: (Database: raw.db) Committed datapoint: Q4 2019|_|201
+2023-12-28 22:13:19,634 - INFO: (Database: raw.db) Committed datapoint: Q2 2021|_|1890
+2023-12-28 22:13:19,634 - INFO: (Database: raw.db) Committed datapoint: Q1 2020|_|318
+2023-12-28 22:13:19,717 - INFO: (Database: raw.db) Committed datapoint: Q3 2021|_|2010
+2023-12-28 22:13:19,718 - INFO: (Database: raw.db) Committed datapoint: Q2 2020|_|301
+2023-12-28 22:13:19,801 - INFO: (Database: raw.db) Committed datapoint: Q4 2021|_|2145
+2023-12-28 22:13:19,802 - INFO: (Database: raw.db) Committed datapoint: Q3 2020|_|188
+2023-12-28 22:13:19,885 - INFO: (Database: raw.db) Committed datapoint: Q1 2022|_|2205
+2023-12-28 22:13:19,886 - INFO: (Database: raw.db) Committed datapoint: Q4 2020|_|174
+2023-12-28 22:13:19,985 - INFO: (Database: raw.db) Committed datapoint: Q2 2022|_|2270
+2023-12-28 22:13:19,986 - INFO: (Database: raw.db) Committed datapoint: Q1 2021|_|177
+2023-12-28 22:13:20,126 - INFO: (Database: raw.db) Committed datapoint: Q3 2022|_|2335
+2023-12-28 22:13:20,126 - INFO: (Database: raw.db) Committed datapoint: Q2 2021|_|205
+2023-12-28 22:13:20,217 - INFO: (Database: raw.db) Committed datapoint: Q4 2022|_|2350
+2023-12-28 22:13:20,218 - INFO: (Database: raw.db) Committed datapoint: Q3 2021|_|186
+2023-12-28 22:13:20,317 - INFO: (Database: raw.db) Committed datapoint: Q1 2023|_|2365
+2023-12-28 22:13:20,318 - INFO: (Database: raw.db) Committed datapoint: Q4 2021|_|173
+2023-12-28 22:13:20,403 - INFO: (Database: raw.db) Committed datapoint: Q2 2023|_|2385
+2023-12-28 22:13:20,404 - INFO: (Database: raw.db) Committed datapoint: Q1 2022|_|188
+2023-12-28 22:13:20,485 - INFO: (Database: raw.db) Committed datapoint: Q3 2023|_|2400
+2023-12-28 22:13:20,486 - INFO: (Database: raw.db) Committed datapoint: Q2 2022|_|187
+2023-12-28 22:13:20,568 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:20,736 - INFO: (Database: raw.db) Committed datapoint: Q3 2022|_|196
+2023-12-28 22:13:20,958 - INFO: (Database: raw.db) Committed datapoint: Q4 2022|_|177
+2023-12-28 22:13:20,959 - INFO: (Database: raw.db) Committed datapoint: Social App Users - Infogram
+2023-12-28 22:13:21,064 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:21,065 - INFO: (Database: raw.db) All expected attempted charts from raw_gram datapoints commit ended
+2023-12-28 22:13:21,065 - INFO: (Database: raw.db) All attempted expected target data commit ended
+2023-12-28 22:13:21,067 - INFO: (Database: raw.db) Committed datapoint: Q1 2023|_|214
+2023-12-28 22:13:21,204 - INFO: (Database: raw.db) Committed datapoint: Q2 2023|_|229
+2023-12-28 22:13:21,379 - INFO: (Database: raw.db) Committed datapoint: Q3 2023|_|220
+2023-12-28 22:13:21,476 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:21,668 - INFO: (Database: raw.db) Committed datapoint: Social App Users - Infogram
+2023-12-28 22:13:21,756 - INFO: (Database: raw.db) All datapoints have been committed
+2023-12-28 22:13:21,757 - INFO: (Database: raw.db) All expected attempted charts from raw_tktk datapoints commit ended
+2023-12-28 22:13:21,757 - INFO: (Database: raw.db) All attempted expected target data commit ended
+2023-12-28 22:13:21,764 - INFO: (Database: raw.db) Connection closed
+2023-12-28 22:13:21,766 - INFO: [CURRENT SCRAPING SESSION ENDED]

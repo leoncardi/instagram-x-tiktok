@@ -3,7 +3,6 @@ venv/
 __pycache__/
 .vscode/
 *.code-workspace
-*.log
 tokens.txt
 .mypy_cache/
 .cache
