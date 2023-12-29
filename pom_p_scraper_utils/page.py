@@ -7,7 +7,7 @@ class PageHandler:
             context: 'ContextObject'):
         self.page_id = page_id
         self.context = context
-        self.page: 'PageObject'
+        self.page = None
 
     async def new_page(self):
         try:
