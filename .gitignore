@@ -1,6 +1,5 @@
 internal/
 venv/
-database/
 __pycache__/
 .vscode/
 *.code-workspace
