@@ -1,0 +1,9 @@
+internal/
+venv/
+__pycache__/
+.vscode/
+*.code-workspace
+tokens.txt
+.mypy_cache/
+.cache
+requirements_backup.txt
