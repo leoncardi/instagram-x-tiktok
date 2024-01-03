@@ -3,8 +3,8 @@ import asyncio
 from entrymaven import l, Essentials
 from playwright.async_api import async_playwright
 
-from database.adb_handler import AsyncSQLiteHandler
-from utils.webscraper import (
+from db_handlers.async_db_commiter import AsyncSQLiteCommiter
+from src.webscraper import(
     BrowserHandler,
     PageHandler,
     ChartScrapeHandler,
@@ -36,20 +36,20 @@ async def scraper_base(context: 'PlaywrightContextOjbect',
     return raw_table_data, raw_chart_data
 
 async def single_loader_base(raw_dataset_name: str, data: list, 
-        data_type: str, sql_handler: AsyncSQLiteHandler):
+        data_type: str, asql_c: AsyncSQLiteCommiter):
     for i, item in enumerate(data):
         item_name = f'{raw_dataset_name}_{data_type}_{i}'
         
-        await sql_handler.create_table(item_name)
-        await sql_handler.insert_extracted_raw_data([item], item_name)
-    l.info(f'(Database: {sql_handler.db_file_name}.db) All expected attempted {data_type}s from {raw_dataset_name} datapoints commit ended')
+        await asql_c.create_table(item_name)
+        await asql_c.insert_extracted_raw_data([item], item_name)
+    l.info(f'(Database: {asql_c.db_file_name}.db) All expected attempted {data_type}s from {raw_dataset_name} datapoints commit ended')
 
-async def multi_loader_base(sql_handler: AsyncSQLiteHandler, raw_dataset_name: str, 
+async def multi_loader_base(asql_c: AsyncSQLiteCommiter, raw_dataset_name: str, 
         tables_data: list, charts_data: list):
     l.info(f'(Database: {db_file_name}.db) Attempting to commit all target data')
 
-    await single_loader_base(raw_dataset_name, tables_data, 'table', sql_handler)
-    await single_loader_base(raw_dataset_name, charts_data, 'chart', sql_handler)
+    await single_loader_base(raw_dataset_name, tables_data, 'table', asql_c)
+    await single_loader_base(raw_dataset_name, charts_data, 'chart', asql_c)
 
     l.info(f'(Database: {db_file_name}.db) All attempted expected target data commit ended') 
 
@@ -61,8 +61,8 @@ async def scraper_main() -> list:
         return extracted_raw_data
 
 async def loader_main(extracted_raw_data: list):
-    async with AsyncSQLiteHandler('database', db_file_name) as sql_handler:
-        tasks = [multi_loader_base(sql_handler, raw_dataset_name, table_data, chart_data) for raw_dataset_name, (table_data, chart_data) 
+    async with AsyncSQLiteCommiter('database', db_file_name) as asql_c:
+        tasks = [multi_loader_base(asql_c, raw_dataset_name, table_data, chart_data) for raw_dataset_name, (table_data, chart_data) 
             in zip(raw_dataset_names, extracted_raw_data)]
         await asyncio.gather(*tasks)
     
