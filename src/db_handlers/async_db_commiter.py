@@ -3,7 +3,7 @@ import aiosqlite
 
 from entrymaven import l
 
-class AsyncSQLiteHandler:
+class AsyncSQLiteCommiter:
     def __init__(self, db_dir, db_file_name):
         self.db_dir = db_dir
         self.db_file_name = db_file_name
@@ -16,10 +16,10 @@ class AsyncSQLiteHandler:
                 os.remove(self.db_path)
                 l.info(f'(Database: {self.db_file_name}.db) Database has been erased to store new data')
             except aiosqlite.Error as e:
-                l.error(f'(Database: {self.db_file_name}.db | AsyncSQLiteHandler.__init__) {e}')
+                l.error(f'(Database: {self.db_file_name}.db | AsyncSQLiteCommiter.__init__) {e}')
                 raise e
 
-    async def __aenter__(self) -> 'AsyncSQLiteHandler':
+    async def __aenter__(self) -> 'AsyncSQLiteCommiter':
         try:
             if not os.path.exists(self.db_path):
                 l.info(f'(Database: {self.db_file_name}.db) Database will be created from scratch to connect')
@@ -28,7 +28,7 @@ class AsyncSQLiteHandler:
             l.info(f'(Database: {self.db_file_name}.db) Connection established ')
             return self
         except aiosqlite.Error as e:
-            l.error(f'(Database: {self.db_file_name}.db | AsyncSQLiteHandler.__enter__) {e}')
+            l.error(f'(Database: {self.db_file_name}.db | AsyncSQLiteCommiter.__enter__) {e}')
             raise e
     
     async def __aexit__(self, exc_type, exc_val, exec_tb):
@@ -39,14 +39,14 @@ class AsyncSQLiteHandler:
             await self.conn.close()
             l.info(f'(Database: {self.db_file_name}.db) Connection closed')
         except aiosqlite.Error as e:
-            l.error(f'(Database: {self.db_file_name}.db | AsyncSQLiteHandler.__exit__) {e}')
+            l.error(f'(Database: {self.db_file_name}.db | AsyncSQLiteCommiter.__exit__) {e}')
             raise e
 
     async def create_table(self, table_name: str):
         try:
             await self.cursor.execute(f'CREATE TABLE IF NOT EXISTS {table_name} (id INTEGER PRIMARY KEY)')
         except aiosqlite.Error as e:
-            l.warning(f'(Database: {self.db_file_name}.db | AsyncSQLiteHandler.create_table) {e}')
+            l.warning(f'(Database: {self.db_file_name}.db | AsyncSQLiteCommiter.create_table) {e}')
 
     async def insert_extracted_raw_data(self, raw_datasets: list, table_name: str):
         try:
@@ -62,4 +62,4 @@ class AsyncSQLiteHandler:
                     await self.conn.commit()
             l.info(f'(Database: {self.db_file_name}.db) All datapoints have been committed')
         except aiosqlite.Error as e:
-            l.warning(f'(Database: {self.db_file_name}.db | AsyncSQLiteHandler.insert_extracted_raw_data) {e}')
+            l.warning(f'(Database: {self.db_file_name}.db | AsyncSQLiteCommiter.insert_extracted_raw_data) {e}')
