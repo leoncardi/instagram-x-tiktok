@@ -4,7 +4,7 @@ from entrymaven import l, Essentials
 from playwright.async_api import async_playwright
 
 from database.adb_handler import AsyncSQLiteHandler
-from pom_p_scraper_utils import (
+from utils.pom_p_scraper import (
     BrowserHandler,
     PageHandler,
     ChartScrapeHandler,
