@@ -4,13 +4,13 @@ from entrymaven import l, Essentials
 from playwright.async_api import async_playwright
 
 from database.adb_handler import AsyncSQLiteHandler
-from utils.pom_p_scraper import (
+from utils.webscraper import (
     BrowserHandler,
     PageHandler,
     ChartScrapeHandler,
     TableScrapeHandler)
 
-Essentials.gen(filename='scraper.log')
+Essentials.gen(filename='webscraper.log')
 pages_id = ['Instagram', 'TikTok']
 targets_url = ['https://www.businessofapps.com/data/instagram-statistics/', 'https://www.businessofapps.com/data/tik-tok-statistics/']
 db_file_name = 'raw'
