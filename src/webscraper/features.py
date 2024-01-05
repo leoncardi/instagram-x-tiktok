@@ -12,7 +12,7 @@ class ScrapeHandlerUtils:
                     await page.wait_for_timeout(1000)
                     l.info(f'(Scraper: {page_id}) Waiting for {title} ({i}/2 seconds)')
             
-            await target.screenshot(path=f'database/raw_data_screenshots/{title}.jpg')
+            await target.screenshot(path=f'database/01_raw_data_screenshots/{title}.jpg')
             l.info(f'(Scraper: {page_id}) Attempt to take a screenshot of the {title} element')
         except Exception as e:
             l.error(f'(Scraper: {page_id}) {e}')

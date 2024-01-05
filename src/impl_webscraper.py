@@ -4,7 +4,7 @@ from entrymaven import l, Essentials
 from playwright.async_api import async_playwright
 
 from db_handlers.async_db_commiter import AsyncSQLiteCommiter
-from src.webscraper import(
+from webscraper import(
     BrowserHandler,
     PageHandler,
     ChartScrapeHandler,
@@ -13,8 +13,8 @@ from src.webscraper import(
 Essentials.gen(filename='webscraper.log')
 pages_id = ['Instagram', 'TikTok']
 targets_url = ['https://www.businessofapps.com/data/instagram-statistics/', 'https://www.businessofapps.com/data/tik-tok-statistics/']
-db_file_name = 'raw'
-raw_dataset_names = ['raw_gram', 'raw_tktk']
+db_file_name = '01_raw'
+raw_dataset_names = ['raw_ig', 'raw_tk']
 
 async def scraper_base(context: 'PlaywrightContextOjbect',
         page_id: str, target_url: str) -> (list, list):
