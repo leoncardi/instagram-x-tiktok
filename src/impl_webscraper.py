@@ -10,7 +10,7 @@ from webscraper import(
     ChartScrapeHandler,
     TableScrapeHandler)
 
-Essentials.gen(filename='webscraper.log')
+Essentials.gen(filename='webscraping.log')
 pages_id = ['Instagram', 'TikTok']
 targets_url = ['https://www.businessofapps.com/data/instagram-statistics/', 'https://www.businessofapps.com/data/tik-tok-statistics/']
 db_file_name = '01_raw'
