@@ -28,7 +28,7 @@ async def scraper_base(context: 'PlaywrightContextOjbect',
     founded_charts = await chart_scraper.multi_chart_finder(chart_selector='infogram-embed', raw_dv=raw_dv, screenshot=True)
 
     raw_table_data = await table_scraper.multi_table_scraper(tables=founded_tables)
-    raw_chart_data = await chart_scraper.multi_chart_scraper(charts=founded_charts)
+    raw_chart_data = await chart_scraper.multi_barchart_scraper(charts=founded_charts)
 
     await target_ph.close()
     return raw_table_data, raw_chart_data

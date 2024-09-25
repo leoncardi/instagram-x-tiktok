@@ -40,11 +40,16 @@ class PageObject:
             l.error(f'(PageObject.goto) {e}')
         
     async def popup_checkout(self):
+        identificable_popups = ['#brave_popup_70278__step__0']
         try:
             try:
                 l.info(f'(Scraper: {self.page_id}) Waiting for any popup to appear in order to close it')
                 await self.page.wait_for_timeout(2000)
-                await self.page.locator('#brave_popup_70278__step__0').get_by_role('img').first.click()  
+                for popup in identificable_popups:
+                    if await self.page.locator(popup).count() > 0:
+                        l.info(f'(Scraper: {self.page_id}) A popup was raised and subsequently closed by automation')
+                        await self.page.locator(popup).get_by_role('img').first.click()
+
                 l.info(f'(Scraper: {self.page_id}) A popup was raised and subsequently closed by automation')
             except:
                 l.info(f'(Scraper: {self.page_id}) No identifiable popup type was raised')

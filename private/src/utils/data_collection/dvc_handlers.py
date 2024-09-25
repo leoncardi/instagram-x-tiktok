@@ -18,6 +18,3 @@ class RawDVC:
         
         raw_data_version_name = f'v{timestamp}-GMT3'
         return raw_data_version_name
-
-
-# scraped_raw_data_vGMT3_20240905_005035.db
