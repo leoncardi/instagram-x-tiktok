@@ -165,19 +165,24 @@ class DFVC:
             file_path (str): The path where the .dfvc file will be saved.
 
         Raises:
-            ValueError: If the file_path is invalid or not writable.
+            ValueError: If the file_path is invalid.
             IOError: If there is an issue during the file writing process.
         """
         # Ensure the file extension is .dfvc
         if not file_path.endswith('.dfvc'):
             file_path += '.dfvc'
 
-        # Validate the directory path
+        # Validate and create the directory if it does not exist
         directory = os.path.dirname(file_path) or "."
-        if not os.access(directory, os.W_OK):
-            raise ValueError(f"Cannot write to directory: {directory}")
+        if not os.path.exists(directory):
+            try:
+                os.makedirs(directory)
+                print(f"Directory {directory} created.")
+            except Exception as e:
+                raise ValueError(f"Cannot create directory {directory}: {e}")
 
         try:
+            # Save the object as a .dfvc file
             with open(file_path, 'wb') as file:
                 pickle.dump(self, file)
         except Exception as e:
