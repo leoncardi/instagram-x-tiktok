@@ -7,9 +7,9 @@ import pandas as pd
 
 
 class DFVC:
-    def __init__(self, df: pd.DataFrame, df_name: str = None):
+    def __init__(self, df: pd.DataFrame, df_description: str = None):
         self.df = df
-        self.df_name = df_name if df_name else 'Untitled DataFrame'
+        self.df_description = df_description if df_description else 'Untitled DataFrame'
         self.creation_date = self.get_current_gmt_timestamp()
         self.version = self.generate_version_hash()
         self.shape = self.df.shape
@@ -40,7 +40,7 @@ class DFVC:
                 <span style='font-weight: bold; color:#2d6f6b;'>DFVC Object</span>
             </div>
             <div id='{unique_id}_info' style='display:none; margin-top:10px;'>
-                <strong style='color:#2d6f6b;'>df_name==</strong>{self.df_name}<br>
+                <strong style='color:#2d6f6b;'>df_description==</strong>{self.df_description}<br>
                 <strong style='color:#2d6f6b;'>version==</strong>{self.version}<br>
                 <strong style='color:#2d6f6b;'>creation_date==</strong>{self.creation_date}<br>
                 <strong style='color:#2d6f6b;'>shape==</strong>{self.shape}<br>
