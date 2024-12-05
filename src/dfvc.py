@@ -40,10 +40,10 @@ class DFVC:
                 <span style='font-weight: bold; color:#2d6f6b;'>DFVC Object</span>
             </div>
             <div id='{unique_id}_info' style='display:none; margin-top:10px;'>
-                <strong style='color:#2d6f6b;'>df_name==</strong> {self.df_name}<br>
-                <strong style='color:#2d6f6b;'>version==</strong> {self.version}<br>
-                <strong style='color:#2d6f6b;'>creation_date==</strong> {self.creation_date}<br>
-                <strong style='color:#2d6f6b;'>shape==</strong> {self.shape}<br>
+                <strong style='color:#2d6f6b;'>df_name==</strong>{self.df_name}<br>
+                <strong style='color:#2d6f6b;'>version==</strong>{self.version}<br>
+                <strong style='color:#2d6f6b;'>creation_date==</strong>{self.creation_date}<br>
+                <strong style='color:#2d6f6b;'>shape==</strong>{self.shape}<br>
             </div>
         </div>
         """
