@@ -1,5 +1,4 @@
 import os
-import hashlib
 from datetime import datetime
 from tzlocal import get_localzone
 import pickle
@@ -74,20 +73,15 @@ class DFVC:
 
     def generate_version_hash(self):
         """
-        Generates a compact and unique hash based solely on the dataframe content.
-
+        Generates a unique hash based solely on the dataframe content.
         Returns:
-            str: A SHA-256 hash representing the version.
+            str: A unique hash representing the dataframe version.
         """
-        # Ensure the dataframe is not empty or None
         if self.df is None or self.df.empty:
             raise ValueError("The dataframe is either None or empty. Cannot generate a version hash.")
 
-        # Generate a hash directly from the dataframe content
-        version_hash = hashlib.sha256(
-            pd.util.hash_pandas_object(self.df, index=True).values.tobytes()
-        ).hexdigest()
-
+        # Use pandas' built-in hash directly (without hashlib.sha256)
+        version_hash = pd.util.hash_pandas_object(self.df, index=True).values.tobytes()
         return version_hash
 
 
