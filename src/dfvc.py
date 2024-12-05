@@ -8,7 +8,7 @@ import pandas as pd
 
 class DFVC:
     def __init__(self, df: pd.DataFrame, df_name: str = None):
-        self.df = df.sort_index(axis=0).sort_index(axis=1)
+        self.df = df
         self.df_name = df_name if df_name else 'Untitled DataFrame'
         self.creation_date = self.get_current_gmt_timestamp()
         self.version = self.generate_version_hash()
